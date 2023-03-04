@@ -1,7 +1,7 @@
-const Title = ({children}) => {
+const Title = ({children, className}) => {
   return (
     <p
-      className="text-xl"
+      className={`text-xl md:text-3xl ${className}`}
     >
       {children}
     </p>

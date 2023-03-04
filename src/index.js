@@ -25,9 +25,6 @@ const router = createBrowserRouter([
   }
 ]);
 
-const colors = ['192 129 93', '102 153 255', '197 181 154', '128, 203, 239']
-
-document.documentElement.style.setProperty('--color-primary', colors[0]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

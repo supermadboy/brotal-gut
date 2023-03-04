@@ -1,7 +1,7 @@
-const SubTitle = ({children}) => {
+const SubTitle = ({children, className}) => {
   return (
     <p
-      className="text-2xl"
+    className={`text-3xl md:text-5xl leading-8 ${className}`}
     >
       {children}
     </p>
