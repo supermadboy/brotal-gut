@@ -22,9 +22,12 @@ const LandingPage = () => {
     <div
       className='min-h-screen flex flex-col items-center px-4 relative'
     >
-      <div 
-        style={{height: '50vh'}}
-      >
+      <div className='sticky top-0 mb-8 flex flex-col justify-end items-center w-full z-10' 
+        style={{height: '92vh'}}>
+        <div className='grow flex items-center w-3/4 max-w-3xl'>
+          <Logo />
+        </div>
+        <SubTitle>Salmannsweilergasse 4</SubTitle>
       </div>
       <div
         className='bottom-0 p-4 w-full fill-primary absolute'
@@ -32,12 +35,9 @@ const LandingPage = () => {
         <div className='md:hidden'><LazyMobileSvg /></div>
         <div className='hidden md:block'><LazyDesktopSvg /></div>
       </div>
-      <div className='sticky bottom-8 mb-8 flex flex-col justify-end items-center w-full' 
-        style={{height: '95vh'}}>
-        <div className='grow flex items-center w-3/4 max-w-3xl'>
-          <Logo />
-        </div>
-        <SubTitle>Salmannsweilergasse 4</SubTitle>
+      <div 
+        style={{height: '55vh'}}
+      >
       </div>
     </div>
   );
