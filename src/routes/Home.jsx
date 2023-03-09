@@ -12,16 +12,16 @@ const Home = () => {
     <div>
       <LandingPage></LandingPage>
       <div
-        className='bg-primary min-h-screen flex flex-col p-4 md:p-8'
+        className='bg-primary min-h-screen flex flex-col p-4'
       >
         <Title className="uppercase">Info</Title>
 
         <div
-          className='border-y flex flex-col grow py-2 md:flex-row md:gap-8'
+          className='border-y flex flex-col grow py-2 md:py-6 md:flex-row md:gap-8'
         >
           <div className='md:flex-1'>
             <SubTitle>Brotalgut GbR</SubTitle>
-            <SubTitle>Salmannsweilergasse 4</SubTitle>
+            <SubTitle className="whitespace-nowrap">Salmannsweilergasse 4</SubTitle>
             <SubTitle>78462 Konstanz</SubTitle>
           </div>
           <div className='flex flex-col grow mt-4 md:mt-0'>
@@ -37,16 +37,16 @@ const Home = () => {
               <div>
                 <Title className="uppercase">Kontakt</Title>  
                 <SubTitle>ig logo</SubTitle>
-                <EmailLink mail="info@brotalgut-konstanz.de" />  
+                <EmailLink mail="info@brotalgut-konstanz.de" >Mail</EmailLink>  
               </div>
               <div>
-                <Link className='text-3xl md:text-5xl hover:italic focus:italic' to="/impressum">Impressum</Link>
+                <Link className='text-3xl md:text-4.5xl hover:italic focus:italic hover:font-serif focus:font-serif' to="/impressum">Impressum</Link>
               </div>
             </div>
           </div>
         </div>
 
-        <div className='hidden w-96 md:mt-6 md:block'>
+        <div className='hidden w-80 md:mt-6 md:block'>
           <Logo />
         </div>
       </div>

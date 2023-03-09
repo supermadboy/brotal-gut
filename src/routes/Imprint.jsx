@@ -13,15 +13,15 @@ const Imprint = () => {
     >
       <div className="flex justify-between">
         <Title className="uppercase">Impressum</Title>
-        <Link to=".." className="uppercase text-xl hover:italic focus:italic md:text-3xl">zurück</Link>
+        <Link to=".." className="uppercase text-3xl md:text-4.5xl hover:italic focus:italic hover:font-serif focus:font-serif">zurück</Link>
       </div>
       <div className="flex flex-col grow border-y md:flex-row md:py-4 md:my-2">
         <div className="border-b my-2 pb-2 md:flex-1 md:border-none">
           <SubTitle>Brotalgut GbR</SubTitle>
-          <SubTitle>Salmannsweilergasse 4</SubTitle>
+          <SubTitle className="whitespace-nowrap">Salmannsweilergasse 4</SubTitle>
           <SubTitle className='mb-4 md:mb-16'>78462 Konstanz</SubTitle>
           <SubTitle>Nora & Jörn Ridder</SubTitle>
-          <EmailLink mail="info@brotalgut-konstanz.de" />
+          <EmailLink mail="info@brotalgut-konstanz.de" >Mail</EmailLink>
         </div>
         <div className="md:flex-1">
           <div className="border-b mb-2">

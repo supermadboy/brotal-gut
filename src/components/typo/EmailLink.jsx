@@ -1,10 +1,10 @@
-const EmailLink = ({mail, className}) => {
+const EmailLink = ({mail, className, children}) => {
   return (
     <a
       href={`mailto:${mail}`}
-      className={`text-xl md:text-5xl ${className}`}
+      className={`text-3xl md:text-4.5xl ${className}`}
     > 
-      {mail}
+      {children}
     </a>
   )
 }

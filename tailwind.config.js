@@ -11,7 +11,11 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['Fugue', ...defaultTheme.fontFamily.sans],
+        'serif': ['EB Garamond', ...defaultTheme.fontFamily.serif],
       },
+      fontSize: {
+        '4.5xl': ['2.75rem', '1']
+      }
     }
   },
   plugins: [],
