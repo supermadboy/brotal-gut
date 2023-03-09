@@ -13,9 +13,9 @@ const Imprint = () => {
     >
       <div className="flex justify-between">
         <Title className="uppercase">Impressum</Title>
-        <Link to=".." className="uppercase text-3xl md:text-4.5xl hover:italic focus:italic hover:font-serif focus:font-serif">zurück</Link>
+        <Link to=".." className="uppercase text-xl md:text-3xl hover:italic focus:italic hover:font-serif focus:font-serif">zurück</Link>
       </div>
-      <div className="flex flex-col grow border-y md:flex-row md:py-4 md:my-2">
+      <div className="flex flex-col grow border-y md:flex-row md:py-4 md:my-2 md:border-y-2">
         <div className="border-b my-2 pb-2 md:flex-1 md:border-none">
           <SubTitle>Brotalgut GbR</SubTitle>
           <SubTitle className="whitespace-nowrap">Salmannsweilergasse 4</SubTitle>
@@ -24,7 +24,7 @@ const Imprint = () => {
           <EmailLink mail="info@brotalgut-konstanz.de" >Mail</EmailLink>
         </div>
         <div className="md:flex-1">
-          <div className="border-b mb-2">
+          <div className="border-b mb-2 md:border-b-2">
             <div className="mb-2">
               <Text className="uppercase">Gestaltung</Text>
               <Text>Katharina Peters</Text>

@@ -20,24 +20,21 @@ const LandingPage = () => {
 
   return (
     <div
-      className='min-h-screen flex flex-col items-center px-4 relative'
+      className='min-h-screen flex flex-col items-center px-4'
     >
-      <div className='sticky top-0 mb-8 flex flex-col justify-end items-center w-full z-10' 
-        style={{height: '92vh'}}>
-        <div className='grow flex items-center w-3/4 max-w-3xl'>
+      <div className='sticky top-0 flex flex-col justify-end items-center h-screen w-full z-10' >
+        <div className='grow flex items-center w-3/4 max-w-3xl relative'>
           <Logo />
+          <div className="absolute bottom-6 flex w-full justify-center">
+            <SubTitle className="whitespace-nowrap">Salmannsweilergasse 4</SubTitle>
+          </div> 
         </div>
-        <SubTitle>Salmannsweilergasse 4</SubTitle>
       </div>
       <div
-        className='bottom-0 p-4 w-full fill-primary absolute'
+        className='-mt-20 mb-4 w-full fill-primary'
       >
         <div className='md:hidden'><LazyMobileSvg /></div>
         <div className='hidden md:block'><LazyDesktopSvg /></div>
-      </div>
-      <div 
-        style={{height: '55vh'}}
-      >
       </div>
     </div>
   );
