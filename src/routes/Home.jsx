@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Insta from '../components/images/insta';
 import Logo from '../components/images/Logo';
 import LandingPage from '../components/LandingPage';
 import EmailLink from '../components/typo/EmailLink';
@@ -36,7 +37,7 @@ const Home = () => {
             <div className='flex flex-col grow justify-between md:justify-start md:grow-0'>
               <div>
                 <Title className="uppercase">Kontakt</Title>  
-                <SubTitle>ig logo</SubTitle>
+                <Insta />
                 <EmailLink mail="info@brotalgut-konstanz.de" >Mail</EmailLink>  
               </div>
               <div>
