@@ -15,8 +15,6 @@ const Home = () => {
       <div
         className='bg-primary min-h-screen flex flex-col p-4'
       >
-        <Title className="uppercase">Info</Title>
-
         <div
           className='border-y flex flex-col grow py-2 md:py-6 md:flex-row md:gap-8 md:border-y-2'
         >
