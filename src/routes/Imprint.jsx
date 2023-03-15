@@ -13,7 +13,7 @@ const Imprint = () => {
     >
       <div className="flex justify-between">
         <Title className="uppercase">Impressum</Title>
-        <Link to=".." className="uppercase text-xl md:text-3xl hover:italic focus:italic hover:font-serif focus:font-serif">zurück</Link>
+        <Link to="/" className="uppercase text-xl md:text-3xl hover:italic focus:italic hover:font-serif focus:font-serif">zurück</Link>
       </div>
       <div className="flex flex-col grow border-y md:flex-row md:py-4 md:my-2 md:border-y-4">
         <div className="border-b my-2 pb-2 md:flex-1 md:border-none">
