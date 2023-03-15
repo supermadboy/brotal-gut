@@ -15,16 +15,16 @@ const Imprint = () => {
         <Title className="uppercase">Impressum</Title>
         <Link to=".." className="uppercase text-xl md:text-3xl hover:italic focus:italic hover:font-serif focus:font-serif">zurück</Link>
       </div>
-      <div className="flex flex-col grow border-y md:flex-row md:py-4 md:my-2 md:border-y-2">
+      <div className="flex flex-col grow border-y md:flex-row md:py-4 md:my-2 md:border-y-4">
         <div className="border-b my-2 pb-2 md:flex-1 md:border-none">
           <SubTitle>Brotalgut GbR</SubTitle>
           <SubTitle className="whitespace-nowrap">Salmannsweilergasse 4</SubTitle>
           <SubTitle className='mb-4 md:mb-16'>78462 Konstanz</SubTitle>
           <SubTitle>Nora & Jörn Ridder</SubTitle>
-          <EmailLink mail="info@brotalgut-konstanz.de" >Mail</EmailLink>
+          <EmailLink mail="info@brotalgut-konstanz.de" >info@brotalgut-konstanz.de</EmailLink>
         </div>
-        <div className="md:flex-1">
-          <div className="border-b mb-2 md:border-b-2">
+        <div className="md:flex-1 md:flex-grow-[2]">
+          <div className="border-b mb-2 md:border-b-4">
             <div className="mb-2">
               <Text className="uppercase">Gestaltung</Text>
               <Text>Katharina Peters</Text>
@@ -40,7 +40,7 @@ const Imprint = () => {
             </div>
             <div className="mb-3 md:mb-4">
               <Text className="uppercase">Haftung für Inhalte</Text>
-              <Text>Als Diensteanbieter sind wir, Brotalgut GbR., gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpfl ichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</Text>
+              <Text>Als Diensteanbieter sind wir, Brotalgut GbR., gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</Text>
             </div>
             <div className="mb-3 md:mb-4">
               <Text className="uppercase">Haftung für Links</Text>

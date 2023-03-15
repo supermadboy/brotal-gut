@@ -31,7 +31,7 @@ const LandingPage = () => {
         </div>
       </div>
       <div
-        className='-mt-20 mb-4 w-full fill-primary'
+        className='-mt-28 mb-4 w-full fill-primary'
       >
         <div className='md:hidden'><LazyMobileSvg /></div>
         <div className='hidden md:block'><LazyDesktopSvg /></div>
