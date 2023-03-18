@@ -15,7 +15,7 @@ const EmailLink = ({mail, className, children}) => {
           c0.041-0.023,0.084-0.04,0.124-0.065l29.796-19.16v32.551C69.295,55.771,67.86,57.206,66.097,57.206z"/>
       </g>
       </svg>
-      {children}
+      <span className="mb-1 md:mb-2">{children}</span>
     </a>
   )
 }

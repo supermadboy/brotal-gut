@@ -16,7 +16,7 @@ const Home = () => {
         className='bg-primary min-h-screen flex flex-col p-4'
       >
         <div
-          className='border-b flex flex-col grow py-2 md:py-6 md:flex-row md:gap-8 md:border-b-4'
+          className='border-b flex flex-col grow py-2 md:py-6 md:flex-row md:gap-8 md:border-b-2'
         >
           <div className='md:flex-1'>
             <SubTitle>Brotalgut GbR</SubTitle>
@@ -24,11 +24,11 @@ const Home = () => {
             <SubTitle>78462 Konstanz</SubTitle>
           </div>
           <div className='flex flex-col grow mt-4 md:mt-0 md:flex-1 md:flex-grow-[2]'>
-            <div className='border-b mb-2 pb-2 md:mb-6 md:pb-6 md:border-b-4'>
+            <div className='border-b mb-2 pb-2 md:mb-6 md:pb-6 md:border-b-2'>
               <Title className="uppercase">Inhaber</Title>
               <SubTitle>Nora & Jörn Ridder</SubTitle>
             </div>
-            <div className='border-b mb-2 pb-2 md:mb-6 md:pb-6 md:border-b-4'>
+            <div className='border-b mb-2 pb-2 md:mb-6 md:pb-6 md:border-b-2'>
               <Title className="uppercase">Öffnungszeiten</Title>
               <SubTitle>Coming soon!</SubTitle>
             </div>
