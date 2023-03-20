@@ -15,15 +15,15 @@ const Imprint = () => {
         <Title className="uppercase">Impressum</Title>
         <Link to="/" className="uppercase text-xl md:text-3xl hover:italic focus:italic hover:font-serif focus:font-serif">zurück</Link>
       </div>
-      <div className="flex flex-col grow border-y md:flex-row md:py-4 md:my-2 md:border-y-2">
-        <div className="border-b my-2 pb-2 md:flex-1 md:border-none">
+      <div className="flex flex-col grow border-y md:flex-row md:py-4 md:my-2 md:border-y-2 ">
+        <div className="border-b my-2 pb-2 md:flex-1 md:border-none md:flex-grow-[2]">
           <SubTitle>Brotalgut GbR</SubTitle>
           <SubTitle className="whitespace-nowrap">Salmannsweilergasse 4</SubTitle>
           <SubTitle className='mb-4 md:mb-16'>78462 Konstanz</SubTitle>
           <SubTitle>Nora & Jörn Ridder</SubTitle>
           <EmailLink mail="info@brotalgut-konstanz.de" >info@brotalgut-konstanz.de</EmailLink>
         </div>
-        <div className="md:flex-1 md:flex-grow-[2]">
+        <div className="md:flex-1 md:flex-grow-[3]">
           <div className="border-b mb-2 md:border-b-2">
             <div className="mb-2">
               <Text className="uppercase">Gestaltung</Text>

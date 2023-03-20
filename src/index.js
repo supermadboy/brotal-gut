@@ -9,15 +9,28 @@ import Home from './routes/Home';
 import './index.css';
 import { Navigate } from 'react-router-dom';
 import Imprint from './routes/Imprint';
+import Root from './routes/Root';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/impressum",
-    element: <Imprint />,
+    element: <Root />,
+    children: [
+      {
+        path: "",
+        element: 
+        <React.Suspense fallback={<></>}>
+          <Home />
+        </React.Suspense>,
+      },
+      {
+        path: "impressum",
+        element: 
+        <React.Suspense fallback={<></>}>
+          <Imprint />
+        </React.Suspense>,
+      },
+    ]
   },
   {
     path:"*",
@@ -27,6 +40,7 @@ const router = createBrowserRouter([
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
