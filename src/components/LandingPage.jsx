@@ -14,7 +14,7 @@ if (randomSvg > 2) {
 
 document.documentElement.style.setProperty('--color-primary', colors[randomColor]);
 const LazyMobileSvg = React.lazy(() => import('./images/mobile/' + svgs[randomSvg]));
-const LazyDesktopSvg = React.lazy(() => import('./images/desktop/' + svgs[randomSvg]));
+const LazyDesktopSvg = React.lazy(() => import('./images/desktop/' + svgs[1]));
 
 const LandingPage = () => {
 
