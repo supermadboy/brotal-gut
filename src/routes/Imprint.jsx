@@ -51,6 +51,24 @@ const Imprint = () => {
           </div>
           <div >
             <div className="mb-3 md:mb-4">
+              <Text>Berufsbezeichnung: Bäcker*in</Text>
+              <Text>Zuständige Kammer: Handwerkskammer Konstanz (HWK)</Text>
+              <Text>Verliehen in: Deutschland</Text>
+            </div>
+            <div className="mb-3 md:mb-4">
+              <Text>Es gelten folgende berufsrechtliche Regelungen:</Text>
+              <Text>Gesetz zur Ordnung des Handwerks</Text>
+              <Text>einsehbar unter: http://www.gesetze-im-internet.de/hwo/HwO.pdf</Text>
+            </div>
+            <div className="mb-3 md:mb-4">
+              <Text>EU-Streitschlichtung</Text>
+              <Text>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr/.</Text>
+            </div>
+            <div className="mb-3 md:mb-4">
+              <Text>Verbraucherstreitbeilegung/Universalschlichtungsstelle</Text>
+              <Text>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</Text>
+            </div>
+            <div className="mb-3 md:mb-4">
               <Text>Angaben gemäß § 5 TMG</Text>
             </div>
             <div className="mb-3 md:mb-4">
