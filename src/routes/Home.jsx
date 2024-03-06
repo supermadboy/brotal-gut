@@ -30,7 +30,7 @@ const Home = () => {
             </div>
             <div className=' mb-4 md:mb-8 '>
               <Title className="uppercase mb-1 border-b md:border-b-2 md:mb-4">Öffnungszeiten</Title>
-              <SubTitle>Do&ndash;Fr 12:00&ndash;18:00</SubTitle>
+              <SubTitle>Do, Do & Fr 12:00&ndash;18:00</SubTitle>
             </div>
             <div className='flex flex-col grow justify-between md:justify-start md:grow-0'>
               <div>
