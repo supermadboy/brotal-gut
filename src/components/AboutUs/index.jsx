@@ -5,7 +5,10 @@ export default function AboutUs() {
   return (
     <div>
       <Picture src="landing_page" alt="ein klein Bild" />
-      <Text className="p-4">
+      <Text
+        id="about-us"
+        className="p-4 scroll-mt-navbarHeight md:scroll-mt-navbarHeightDesktop"
+      >
         Hallo, wir sind Nora & Jörn! In unserer kleinen, transparenten Backstube
         backen wir frisches Sauerteigbrot und andere handgemachte Produkte. Wir
         arbeiten mit hochwertigen Rohstoffen, im kleinen Familienbetrieb in

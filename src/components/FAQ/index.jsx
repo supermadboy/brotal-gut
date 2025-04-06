@@ -208,7 +208,10 @@ const items = [
 
 export default function FAQ() {
   return (
-    <div>
+    <div
+      id="faq"
+      className="scroll-mt-navbarHeight md:scroll-mt-navbarHeightDesktop"
+    >
       <Accordion items={items} />
       <Text className="mt-4 italic">
         Deine Frage ist nicht dabei? Dann schreib uns gerne eine Mail.

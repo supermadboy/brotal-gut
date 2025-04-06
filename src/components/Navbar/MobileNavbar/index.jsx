@@ -7,8 +7,8 @@ export default function MobileNavbar() {
   const [toggled, toggle] = useState(false);
 
   return (
-    <div className="w-full relative sm:hidden">
-      <div className="flex justify-between m-4">
+    <div className="w-full relative sm:hidden h-navbarHeight">
+      <div className="flex justify-between p-4">
         <div className="w-56">
           <Logo />
         </div>
@@ -16,7 +16,7 @@ export default function MobileNavbar() {
         <NavbarButton toggle={toggle} toggled={toggled} />
       </div>
 
-      <NavbarContent toggled={toggled} />
+      <NavbarContent toggled={toggled} toggle={toggle} />
     </div>
   );
 }
