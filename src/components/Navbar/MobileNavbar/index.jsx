@@ -7,7 +7,7 @@ export default function MobileNavbar() {
   const [toggled, toggle] = useState(false);
 
   return (
-    <div className="w-full relative sm:hidden h-navbarHeight">
+    <div className="w-full h-navbarHeight relative bg-primary sm:hidden">
       <div className="flex justify-between p-4">
         <div className="w-56">
           <Logo />

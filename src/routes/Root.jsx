@@ -8,7 +8,7 @@ export default function Root() {
   return (
     <>
       <Outlet />
-      <footer className="p-6 flex gap-4 justify-between items-center bg-primary">
+      <footer className="p-6 flex gap-4 justify-between items-center bg-primary flex-wrap">
         <div className="flex flex-col">
           <div className="w-40 mb-2">
             <Logo />

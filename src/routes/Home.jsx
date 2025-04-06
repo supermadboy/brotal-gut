@@ -7,11 +7,11 @@ import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
-    <div>
+    <div className="min-h-dvh">
       <LandingPage />
       <Navbar />
       <Disclaimer />
-      <div className="flex flex-col gap-4 my-4">
+      <div className="flex flex-col gap-4 mb-4">
         <AboutUs />
         <div className="mx-4">
           <Breads />

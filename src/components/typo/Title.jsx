@@ -1,5 +1,5 @@
 const Title = ({ children, className }) => {
-  return <p className={`text-xl md:text-3xl ${className}`}>{children}</p>;
+  return <p className={`text-2xl md:text-4.5xl ${className}`}>{children}</p>;
 };
 
 export default Title;

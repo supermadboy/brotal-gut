@@ -8,10 +8,11 @@ export default function Carousel({ images, vertical = false }) {
   var settings = {
     dots: true,
     infinite: true,
-    speed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     vertical,
+    arrows: false,
+    autoplay: true,
   };
 
   return (
