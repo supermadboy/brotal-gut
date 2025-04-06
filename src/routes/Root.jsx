@@ -7,7 +7,9 @@ import Logo from "../components/images/Logo";
 export default function Root() {
   return (
     <>
-      <Outlet />
+      <div className="min-h-dvh">
+        <Outlet />
+      </div>
       <footer className="p-6 flex gap-4 justify-between items-center bg-primary flex-wrap">
         <div className="flex flex-col">
           <div className="w-40 mb-2">

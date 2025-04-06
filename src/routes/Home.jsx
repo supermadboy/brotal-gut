@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
-    <div className="min-h-dvh">
+    <div>
       <LandingPage />
       <Navbar />
       <Disclaimer />
