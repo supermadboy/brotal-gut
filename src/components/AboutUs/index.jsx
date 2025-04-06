@@ -1,3 +1,4 @@
+import Carousel from "../Carousel";
 import Picture from "../Picture";
 import Text from "../typo/Text";
 
@@ -15,7 +16,10 @@ export default function AboutUs() {
         Konstanz am Bodensee
       </Text>
 
-      <Picture src="landing_page" alt="ein klein Bild" />
+      <Carousel
+        images={["vertical1", "vertical2", "vertical3", "vertical4"]}
+        vertical
+      />
 
       <Text className="p-4">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
