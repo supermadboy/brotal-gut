@@ -7,24 +7,28 @@ export default function AboutUs() {
     <div>
       <Picture src="landing_page" alt="ein klein Bild" />
 
-      <div className="flex flex-col-reverse grid-cols-2 sm:grid">
-        <Carousel
-          images={["vertical1", "vertical2", "vertical3", "vertical4"]}
-          vertical
-        />
+      <div className="flex flex-col-reverse grid-cols-2 md:grid">
+        <div>
+          <Picture src="vertical1" />
+          <Picture src="vertical2" className="hidden md:block" />
+          <Picture src="vertical3" className="hidden md:block" />
+          <Picture src="vertical4" className="hidden md:block" />
+        </div>
 
-        <Text
-          id="about-us"
-          className="p-4 scroll-mt-navbarHeight sm:scroll-mt-navbarHeightDesktop"
-        >
-          Hallo, wir sind Nora & Jörn! In unserer kleinen, transparenten
-          Backstube backen wir frisches Sauerteigbrot und andere handgemachte
-          Produkte. Wir arbeiten mit hochwertigen Rohstoffen, im kleinen
-          Familienbetrieb in Konstanz am Bodensee
-        </Text>
+        <div>
+          <Text
+            id="about-us"
+            className="sticky top-navbarHeight p-4 scroll-mt-navbarHeight md:scroll-mt-navbarHeightDesktop"
+          >
+            Hallo, wir sind Nora & Jörn! In unserer kleinen, transparenten
+            Backstube backen wir frisches Sauerteigbrot und andere handgemachte
+            Produkte. Wir arbeiten mit hochwertigen Rohstoffen, im kleinen
+            Familienbetrieb in Konstanz am Bodensee
+          </Text>
+        </div>
       </div>
 
-      <div className="grid-cols-2 sm:grid">
+      <div className="grid-cols-2 md:grid">
         <Text className="p-4">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
@@ -37,7 +41,7 @@ export default function AboutUs() {
           takimata sanctus est Lorem ipsum dolor sit amet.
         </Text>
 
-        <div>
+        <div className="border-t-2 solid border-black mx-4 text-center md:text-left md:border-t-0">
           <div className="p-4">
             <Text className="uppercase mb-2">Unsere Lieferanten</Text>
 
@@ -80,17 +84,19 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <Carousel
-        images={[
-          "horizontal1",
-          "horizontal2",
-          "horizontal3",
-          "horizontal4",
-          "horizontal5",
-          "horizontal6",
-          "horizontal7",
-        ]}
-      />
+      <div className="max-h-dvh">
+        <Carousel
+          images={[
+            "horizontal1",
+            "horizontal2",
+            "horizontal3",
+            "horizontal4",
+            "horizontal5",
+            "horizontal6",
+            "horizontal7",
+          ]}
+        />
+      </div>
     </div>
   );
 }

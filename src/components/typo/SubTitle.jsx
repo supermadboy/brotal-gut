@@ -1,6 +1,8 @@
 const SubTitle = ({ children, className }) => {
   return (
-    <p className={`text-xl md:text-3xl leading-8 ${className}`}>{children}</p>
+    <p className={`text-3xl md:text-4.5xl leading-8 ${className}`}>
+      {children}
+    </p>
   );
 };
 

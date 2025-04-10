@@ -1,16 +1,35 @@
+import { useState } from "react";
 import SubTitle from "../typo/SubTitle";
-import Title from "../typo/Title";
+import ClosingIcon from "./ClosingIcon";
+import Text from "../typo/Text";
 
 export default function Disclaimer() {
+  const [closed, setClosed] = useState(false);
+
   return (
-    <div className="bg-primary p-8 flex items-center flex-col gap-4">
-      <Title className="uppercase text-center">
+    <div
+      className={
+        (closed ? "hidden " : "md:flex") +
+        " bg-primary p-8 items-center justify-center flex-col gap-4 relative "
+      }
+    >
+      <div
+        onClick={() => setClosed(true)}
+        className="hidden md:block cursor-pointer absolute top-2 right-2"
+      >
+        <ClosingIcon />
+      </div>
+
+      <Text className="uppercase text-center">
         ++ Neuigkeiten aus der Backstube ++
-      </Title>
-      <SubTitle>
-        Auf Grund eines Betriebsausfluges bleibt die Backstube am Freitag den
-        10. Oktober geschlossen
-      </SubTitle>
+      </Text>
+
+      <div className="max-w-xl text-center">
+        <SubTitle>
+          Auf Grund eines Betriebsausfluges bleibt die Backstube am Freitag den
+          10. Oktober geschlossen
+        </SubTitle>
+      </div>
     </div>
   );
 }

@@ -5,7 +5,9 @@ module.exports = {
   theme: {
     colors: {
       primary: "rgb(var(--color-primary))",
-      white: "#FFF",
+      secondary: "rgb(var(--color-secondary))",
+      white: "#fff",
+      black: "#000",
     },
     extend: {
       fontFamily: {
@@ -18,6 +20,7 @@ module.exports = {
       spacing: {
         navbarHeight: "6.5rem",
         navbarHeightDesktop: "4.5rem",
+        "1/5": "20%",
       },
     },
   },

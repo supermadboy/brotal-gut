@@ -7,7 +7,7 @@ export default function Minus() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <line x1="27" y1="13" x2="-1.90356e-08" y2="13" stroke="#6699FF" />
+      <line x1="27" y1="13" x2="-1.90356e-08" y2="13" stroke="currentColor" />
     </svg>
   );
 }

@@ -213,7 +213,7 @@ export default function FAQ() {
       className="scroll-mt-navbarHeight md:scroll-mt-navbarHeightDesktop"
     >
       <Accordion items={items} />
-      <Text className="mt-4 italic">
+      <Text className="mt-4 font-serif">
         Deine Frage ist nicht dabei? Dann schreib uns gerne eine Mail.
       </Text>
     </div>

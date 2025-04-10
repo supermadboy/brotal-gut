@@ -13,13 +13,25 @@ export default function NavbarConent({ toggled, toggle }) {
       items-center
       `}
     >
-      <a href="#about-us" onClick={() => toggle(false)}>
+      <a
+        href="#about-us"
+        className="hover:italic focus:italic hover:font-serif focus:font-serif"
+        onClick={() => toggle(false)}
+      >
         Über uns
       </a>
-      <a href="#breads" onClick={() => toggle(false)}>
+      <a
+        href="#breads"
+        className="hover:italic focus:italic hover:font-serif focus:font-serif"
+        onClick={() => toggle(false)}
+      >
         Sortiment
       </a>
-      <a href="#faq" onClick={() => toggle(false)}>
+      <a
+        href="#faq"
+        className="hover:italic focus:italic hover:font-serif focus:font-serif"
+        onClick={() => toggle(false)}
+      >
         FAQ
       </a>
       <Link to="/impressum">Impressum</Link>

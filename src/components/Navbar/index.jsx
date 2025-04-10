@@ -6,10 +6,10 @@ export default function Navbar() {
     <div className="sticky top-0 z-10">
       <MobileNavbar />
 
-      <div className="justify-between hidden sm:flex p-2 bg-white h-navbarHeightDesktop">
+      <div className="justify-between hidden md:flex p-2 h-navbarHeightDesktop">
         <a
           href="#about-us"
-          className="bg-primary rounded-full text-3xl px-4 py-2"
+          className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif"
         >
           Home
         </a>
@@ -17,22 +17,43 @@ export default function Navbar() {
         <div className="flex gap-1">
           <a
             href="#about-us"
-            className="bg-primary rounded-full text-3xl px-4 py-2"
+            onClick={(event) => {
+              event.preventDefault();
+              document.getElementById("about-us").scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+            className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif"
           >
             Über uns
           </a>
           <a
             href="#breads"
-            className="bg-primary rounded-full text-3xl px-4 py-2"
+            onClick={(event) => {
+              event.preventDefault();
+              document.getElementById("breads").scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+            className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif"
           >
             Sortiment
           </a>
-          <a href="#faq" className="bg-primary rounded-full text-3xl px-4 py-2">
+          <a
+            href="#faq"
+            onClick={(event) => {
+              event.preventDefault();
+              document.getElementById("faq").scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+            className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif"
+          >
             FAQ
           </a>
           <Link
             to="/impressum"
-            className="bg-primary rounded-full text-3xl px-4 py-2"
+            className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif"
           >
             Impressum
           </Link>

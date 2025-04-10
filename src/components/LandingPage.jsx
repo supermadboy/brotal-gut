@@ -2,7 +2,12 @@ import React from "react";
 import Logo from "./images/Logo";
 import SubTitle from "./typo/SubTitle";
 
-const colors = ["192 129 93", "197 181 154", "102 153 255", "128, 203, 239"];
+const colors = [
+  { primary: "192 129 93", secondary: "102 153 255" }, //dunkelbraun
+  { primary: "197 181 154", secondary: "128, 203, 239" }, //hellbraun
+  { primary: "102 153 255", secondary: "192 129 93" }, //dunkelblau
+  { primary: "128, 203, 239", secondary: "197 181 154" }, //hellblau
+];
 const svgs = ["Bread1", "Bread2", "Bread3", "Utensil1", "Utensil2", "Utensil3"];
 
 const randomSvg = Math.floor(Math.random() * 6);
@@ -14,8 +19,14 @@ if (randomSvg > 2) {
 
 document.documentElement.style.setProperty(
   "--color-primary",
-  colors[randomColor]
+  colors[randomColor].primary
 );
+
+document.documentElement.style.setProperty(
+  "--color-secondary",
+  colors[randomColor].secondary
+);
+
 const LazyMobileSvg = React.lazy(() =>
   import("./images/mobile/" + svgs[randomSvg])
 );

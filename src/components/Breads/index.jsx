@@ -1,4 +1,6 @@
+import { useState } from "react";
 import Accordion from "../Accordion";
+import Picture from "../Picture";
 import Text from "../typo/Text";
 
 const availableBreads = [
@@ -120,8 +122,8 @@ const BreadAvailable = ({ available }) => {
   return (
     <div
       className={
-        (available ? "bg-primary" : "bg-transparent") +
-        " rounded-full w-4 h-4 mx-2 md:mx-6 flex-shrink-0"
+        (available ? "bg-secondary" : "bg-transparent") +
+        " rounded-full w-4 h-4 mx-2 md:mx-6 md:w-8 md:h-8 flex-shrink-0"
       }
     />
   );
@@ -141,11 +143,17 @@ const breadToTitle = ({ name, tuesday, thursday, friday }) => {
 const items = [
   {
     title: (
-      <div className="flex items-center gap-4 w-full">
+      <div className="flex items-center gap-4 w-full font-serif">
         <div className="flex-grow w-full" />
-        <Text className="w-4 h-4 mx-2 md:mx-6 flex-shrink-0">Di</Text>
-        <Text className="w-4 h-4 mx-2 md:mx-6 flex-shrink-0">Do</Text>
-        <Text className="w-4 h-4 mx-2 md:mx-6 flex-shrink-0">Fr</Text>
+        <Text className="text-center w-4 h-4 mx-2 md:mx-6 md:w-8 md:h-8 flex-shrink-0">
+          Di
+        </Text>
+        <Text className="text-center w-4 h-4 mx-2 md:mx-6 md:w-8 md:h-8 flex-shrink-0">
+          Do
+        </Text>
+        <Text className="text-center w-4 h-4 mx-2 md:mx-6 md:w-8 md:h-8 flex-shrink-0">
+          Fr
+        </Text>
       </div>
     ),
   },
@@ -153,16 +161,23 @@ const items = [
   ...availableBreads.map((bread) => ({
     title: breadToTitle(bread),
     children: <Text>{bread.description}</Text>,
+    name: bread.name,
   })),
 ];
 
 export default function Breads() {
+  const [clickedItem, setClickedItem] = useState("Dinkelvollkornbrot");
+
   return (
     <div
       id="breads"
-      className="scroll-mt-navbarHeight md:scroll-mt-navbarHeightDesktop"
+      className="md:grid grid-cols-3 gap-4 scroll-mt-navbarHeight md:scroll-mt-navbarHeightDesktop"
     >
-      <Accordion items={items} />
+      <Picture className="hidden md:block" src={`bread/${clickedItem}`} />
+
+      <div className="col-span-2">
+        <Accordion items={items} setClickedItem={setClickedItem} />
+      </div>
     </div>
   );
 }

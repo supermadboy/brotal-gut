@@ -1,10 +1,15 @@
 import AccordionItem from "./AccordionItem";
 
-export default function Accordion({ className, items }) {
+export default function Accordion({ className, items, setClickedItem }) {
   return (
     <div className={className}>
       {items.map((item, i) => (
-        <AccordionItem key={i} title={item.title}>
+        <AccordionItem
+          key={i}
+          title={item.title}
+          setClickedItem={setClickedItem}
+          name={item.name}
+        >
           {item.children}
         </AccordionItem>
       ))}

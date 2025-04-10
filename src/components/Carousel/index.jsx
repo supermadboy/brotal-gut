@@ -18,7 +18,7 @@ export default function Carousel({ images, vertical = false }) {
   return (
     <Slider {...settings}>
       {images.map((img) => (
-        <Picture src={img} key={img} />
+        <Picture src={img} key={img} className="max-h-dvh block" />
       ))}
     </Slider>
   );
