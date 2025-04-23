@@ -5,7 +5,7 @@ import EmailLink from "../../typo/EmailLink";
 export default function NavbarConent({ toggled, toggle }) {
   return (
     <div
-      className={`z-10 bg-primary transition-transform w-screen absolute h-dvh text-2xl ${
+      className={`z-10 bg-primary transition-transform w-screen absolute h-dvh text-large ${
         toggled ? "translate-x-0" : "translate-x-full hidden"
       }
       flex flex-col gap-4
@@ -43,7 +43,7 @@ export default function NavbarConent({ toggled, toggle }) {
       </a>
       <Link to="/impressum">Impressum</Link>
 
-      <div className="flex gap-4">
+      <div className="flex gap-4 mt-8">
         <Insta />
         <EmailLink />
       </div>

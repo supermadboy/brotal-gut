@@ -14,17 +14,14 @@ export default function AccordionItem({
     <div
       className={
         (children && "cursor-pointer") +
-        " first:border-t-0 border-t-2 border-solid border-primary"
+        " first:border-t-0 border-t-2 border-solid border-black"
       }
       onClick={() => {
         isOpen((a) => !a);
         setClickedItem(name);
       }}
     >
-      <div
-        role="button"
-        className={"  py-2 flex justify-between items-center "}
-      >
+      <div role="button" className={"  py flex justify-between items-center "}>
         {title}
         <div className={(children ?? "invisible") + " text-secondary"}>
           {open ? <Minus /> : <Plus />}

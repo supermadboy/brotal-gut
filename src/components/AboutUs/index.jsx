@@ -18,7 +18,7 @@ export default function AboutUs() {
         <div>
           <Text
             id="about-us"
-            className="sticky top-navbarHeight p-4 scroll-mt-navbarHeight md:scroll-mt-navbarHeightDesktop"
+            className="text-center sticky top-navbarHeight px-4 py-12 scroll-mt-navbarHeight md:scroll-mt-navbarHeightDesktop md:text-left"
           >
             Hallo, wir sind Nora & Jörn! In unserer kleinen, transparenten
             Backstube backen wir frisches Sauerteigbrot und andere handgemachte
@@ -29,7 +29,7 @@ export default function AboutUs() {
       </div>
 
       <div className="grid-cols-2 md:grid">
-        <Text className="p-4">
+        <Text className="text-center px-4 py-12  md:text-left">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
@@ -42,7 +42,7 @@ export default function AboutUs() {
         </Text>
 
         <div className="border-t-2 solid border-black mx-4 text-center md:text-left md:border-t-0">
-          <div className="p-4">
+          <div className="px-4 pt-12 pb-4 ">
             <Text className="uppercase mb-2">Unsere Lieferanten</Text>
 
             <Text>
@@ -62,7 +62,7 @@ export default function AboutUs() {
             </Text>
           </div>
 
-          <div className="p-4">
+          <div className="px-4 pt-4 pb-12 ">
             <Text className="uppercase mb-2">Unsere Gastropartnerschaften</Text>
 
             <Text>

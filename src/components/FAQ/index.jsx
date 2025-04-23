@@ -229,15 +229,19 @@ export default function FAQ() {
           onClick={() => setShowMore((b) => !b)}
           className={
             (!showMore ? "" : "rotate-180") +
-            " h-16 flex justify-center items-center p-4 stroke-secondary absolute bottom-0 left-0 right-0 bg-gradient-to-t from-20% from-white"
+            " h-16 flex justify-center items-center p-4 stroke-secondary absolute bottom-0 left-0 right-0 bg-gradient-to-t from-50% from-white"
           }
         >
           <More></More>
         </div>
       </div>
 
-      <Text className="mt-4 font-serif">
-        Deine Frage ist nicht dabei? Dann schreib uns gerne eine Mail.
+      <Text className="font-serif italic text-small">
+        Deine Frage ist nicht dabei?
+      </Text>
+
+      <Text className="font-serif italic text-small">
+        Dann schreib uns gerne eine Mail.
       </Text>
     </div>
   );

@@ -145,13 +145,13 @@ const items = [
     title: (
       <div className="flex items-center gap-4 w-full font-serif">
         <div className="flex-grow w-full" />
-        <Text className="text-center w-4 h-4 mx-2 md:mx-6 md:w-8 md:h-8 flex-shrink-0">
+        <Text className="text-center italic w-4 h-4 mx-2 md:mx-6 md:w-8 md:h-8 flex-shrink-0">
           Di
         </Text>
-        <Text className="text-center w-4 h-4 mx-2 md:mx-6 md:w-8 md:h-8 flex-shrink-0">
+        <Text className="text-center italic w-4 h-4 mx-2 md:mx-6 md:w-8 md:h-8 flex-shrink-0">
           Do
         </Text>
-        <Text className="text-center w-4 h-4 mx-2 md:mx-6 md:w-8 md:h-8 flex-shrink-0">
+        <Text className="text-center italic w-4 h-4 mx-2 md:mx-6 md:w-8 md:h-8 flex-shrink-0">
           Fr
         </Text>
       </div>

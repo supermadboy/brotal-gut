@@ -15,6 +15,9 @@ module.exports = {
         serif: ["EB Garamond", ...defaultTheme.fontFamily.serif],
       },
       fontSize: {
+        small: ["1.125rem", "1.5rem"],
+        large: ["2rem", "2.5rem"],
+        "4.25xl": ["2.5rem", "1"],
         "4.5xl": ["2.75rem", "1"],
       },
       spacing: {

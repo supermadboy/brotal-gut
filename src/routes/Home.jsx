@@ -31,7 +31,7 @@ const Home = () => {
 
       <footer
         id="contact"
-        className="text-center p-6 flex flex-col gap-4 justify-between items-center bg-primary flex-wrap text-white fill-white md:flex-row md:text-left"
+        className="text-center mt-12 px-4 py-12 flex flex-col gap-8 justify-between items-center bg-primary flex-wrap text-white fill-white md:flex-row md:text-left"
       >
         <div className="hidden md:flex flex-col">
           <div className="w-40 mb-2">
@@ -40,24 +40,24 @@ const Home = () => {
           <Text>© {new Date().getFullYear()}, Brotalgut GbR</Text>
         </div>
         <div>
+          <Text className="uppercase">Öffnungszeiten</Text>
+          <Text>Di, Do & Fr</Text>
+          <Text>12 - 18 Uhr</Text>
+        </div>
+        <div>
           <Text className="uppercase">Adresse</Text>
           <Text>Salmannsweilergasse 4</Text>
           <Text>78462 Konstanz</Text>
         </div>
-        <div>
-          <Text className="uppercase">Öffnungszeiten</Text>
-          <Text>Di,Do & Fr</Text>
-          <Text>12 - 18 Uhr</Text>
-        </div>
 
-        <div>
-          <div className="flex gap-4">
+        <div className="flex flex-col gap-8">
+          <div className="flex justify-center gap-4">
             <Insta />
             <EmailLink />
           </div>
           <Link
             to="/impressum"
-            className="bg-primary rounded-full text-3xl  hover:italic focus:italic hover:font-serif focus:font-serif"
+            className="text-small bg-primary rounded-full hover:italic focus:italic hover:font-serif focus:font-serif md:text-3xl"
           >
             Impressum
           </Link>

@@ -9,7 +9,7 @@ export default function Disclaimer() {
   return (
     <div
       className={
-        (closed ? "hidden " : "md:flex") +
+        (closed ? "hidden " : "flex") +
         " bg-primary p-8 items-center justify-center flex-col gap-4 relative "
       }
     >
@@ -24,7 +24,7 @@ export default function Disclaimer() {
         ++ Neuigkeiten aus der Backstube ++
       </Text>
 
-      <div className="max-w-xl text-center">
+      <div className="max-w-xl text-center font-serif">
         <SubTitle>
           Auf Grund eines Betriebsausfluges bleibt die Backstube am Freitag den
           10. Oktober geschlossen

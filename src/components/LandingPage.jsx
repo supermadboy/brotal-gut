@@ -53,14 +53,14 @@ const LandingPage = () => {
       <div className="sticky top-0 flex flex-col justify-end items-center h-screen w-full z-10">
         <div className="grow flex items-center w-3/4 max-w-3xl relative">
           <Logo />
-          <div className="absolute bottom-6 flex w-full justify-center">
+          <div className="absolute bottom-24 flex w-full justify-center md:bottom-60">
             <SubTitle className="whitespace-nowrap">
               Salmannsweilergasse 4
             </SubTitle>
           </div>
         </div>
       </div>
-      <div className="-mt-28 mb-4 w-full">
+      <div className="-mt-28 mb-28 w-full md:mb-44">
         <LazySvg />
       </div>
     </div>
