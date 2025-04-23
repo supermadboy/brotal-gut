@@ -34,6 +34,13 @@ export default function NavbarConent({ toggled, toggle }) {
       >
         FAQ
       </a>
+      <a
+        href="#contact"
+        className="hover:italic focus:italic hover:font-serif focus:font-serif"
+        onClick={() => toggle(false)}
+      >
+        Kontakt
+      </a>
       <Link to="/impressum">Impressum</Link>
 
       <div className="flex gap-4">

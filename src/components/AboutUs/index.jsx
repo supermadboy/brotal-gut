@@ -5,7 +5,7 @@ import Text from "../typo/Text";
 export default function AboutUs() {
   return (
     <div>
-      <Picture src="landing_page" alt="ein klein Bild" />
+      <Picture src="landing_page" alt="ein klein Bild" id="home" />
 
       <div className="flex flex-col-reverse grid-cols-2 md:grid">
         <div>

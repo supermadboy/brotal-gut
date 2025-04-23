@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import AboutUs from "../components/AboutUs";
 import Breads from "../components/Breads";
 import Disclaimer from "../components/Disclaimer";
@@ -28,7 +29,10 @@ const Home = () => {
         </div>
       </div>
 
-      <footer className="text-center p-6 flex flex-col gap-4 justify-between items-center bg-primary flex-wrap text-white fill-white md:flex-row md:text-left">
+      <footer
+        id="contact"
+        className="text-center p-6 flex flex-col gap-4 justify-between items-center bg-primary flex-wrap text-white fill-white md:flex-row md:text-left"
+      >
         <div className="hidden md:flex flex-col">
           <div className="w-40 mb-2">
             <Logo />
@@ -51,7 +55,12 @@ const Home = () => {
             <Insta />
             <EmailLink />
           </div>
-          <Text>Impressum</Text>
+          <Link
+            to="/impressum"
+            className="bg-primary rounded-full text-3xl  hover:italic focus:italic hover:font-serif focus:font-serif"
+          >
+            Impressum
+          </Link>
         </div>
 
         <Text className="md:hidden">

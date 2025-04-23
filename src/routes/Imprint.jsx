@@ -19,23 +19,25 @@ const Imprint = () => {
         </Link>
       </div>
       <div className="flex flex-col grow border-y md:flex-row md:py-4 md:my-2 md:border-y-2 ">
-        <div className="border-b my-2 pb-2 md:flex-1 md:border-none md:flex-grow-[2]">
-          <SubTitle>Brotalgut GbR</SubTitle>
-          <SubTitle className="whitespace-nowrap">
-            Salmannsweilergasse 4
-          </SubTitle>
-          <SubTitle className="mb-4 md:mb-16">78462 Konstanz</SubTitle>
-          <SubTitle>Nora & Jörn Ridder</SubTitle>
-          <EmailLink mail="info@brotalgut-konstanz.de">
-            info@brotalgut-konstanz.de
-          </EmailLink>
+        <div className="border-b mb-2 pb-2 md:flex-1 md:border-none md:flex-grow-[2]">
+          <div className="text-center sticky top-0 pt-2 md:text-left">
+            <SubTitle>Brotalgut GbR</SubTitle>
+            <SubTitle className="whitespace-nowrap">
+              Salmannsweilergasse 4
+            </SubTitle>
+            <SubTitle className="mb-4 md:mb-16">78462 Konstanz</SubTitle>
+            <SubTitle>Nora & Jörn Ridder</SubTitle>
+            <EmailLink mail="info@brotalgut-konstanz.de">
+              info@brotalgut-konstanz.de
+            </EmailLink>
+          </div>
         </div>
-        <div className="md:flex-1 md:flex-grow-[3]">
-          <div className="border-b mb-2 md:border-b-2">
+        <div className="md:mt-2 md:flex-1 md:flex-grow-[3]">
+          <div className="text-center border-b mb-2 md:border-b-2  md:text-left ">
             <div className="mb-2">
               <Text className="uppercase">Gestaltung</Text>
               <Link
-                className="flex items-center gap-1 hover:italic focus:italic hover:font-serif focus:font-serif"
+                className="flex items-center justify-center gap-1 hover:italic focus:italic hover:font-serif focus:font-serif md:justify-start"
                 to="https://katharina-peters.eu/"
                 target="_blank"
               >
@@ -64,7 +66,7 @@ const Imprint = () => {
               <Text className="uppercase">Programmierung</Text>
 
               <Link
-                className="flex items-center gap-1 hover:italic focus:italic hover:font-serif focus:font-serif"
+                className="flex items-center justify-center gap-1 hover:italic focus:italic hover:font-serif focus:font-serif md:justify-start"
                 to="https://www.supermittel.com"
                 target="_blank"
               >
@@ -93,7 +95,7 @@ const Imprint = () => {
               <Text className="uppercase">Fotos</Text>
 
               <Link
-                className="flex items-center gap-1 hover:italic focus:italic hover:font-serif focus:font-serif"
+                className="flex items-center justify-center gap-1 hover:italic focus:italic hover:font-serif focus:font-serif md:justify-start"
                 to="https://www.milenaschilling.de"
                 target="_blank"
               >
@@ -122,7 +124,7 @@ const Imprint = () => {
               <Text className="uppercase">Instagram</Text>
 
               <Link
-                className="flex items-center gap-1 hover:italic focus:italic hover:font-serif focus:font-serif"
+                className="flex items-center justify-center gap-1 hover:italic focus:italic hover:font-serif focus:font-serif md:justify-start"
                 to="https://www.instagram.com/mhllat/"
                 target="_blank"
               >

@@ -8,7 +8,7 @@ export default function Navbar() {
 
       <div className="justify-between hidden md:flex p-2 h-navbarHeightDesktop">
         <a
-          href="#about-us"
+          href="#home"
           className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif"
         >
           Home
@@ -16,10 +16,10 @@ export default function Navbar() {
 
         <div className="flex gap-1">
           <a
-            href="#about-us"
+            href="#home"
             onClick={(event) => {
               event.preventDefault();
-              document.getElementById("about-us").scrollIntoView({
+              document.getElementById("home").scrollIntoView({
                 behavior: "smooth",
               });
             }}
@@ -51,12 +51,18 @@ export default function Navbar() {
           >
             FAQ
           </a>
-          <Link
-            to="/impressum"
+          <a
+            href="#contact"
+            onClick={(event) => {
+              event.preventDefault();
+              document.getElementById("contact").scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
             className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif"
           >
-            Impressum
-          </Link>
+            Kontakt
+          </a>
         </div>
       </div>
     </div>

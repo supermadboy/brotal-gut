@@ -1,5 +1,7 @@
+import { useState } from "react";
 import Accordion from "../Accordion";
 import Text from "../typo/Text";
+import More from "../images/More";
 
 const items = [
   {
@@ -207,12 +209,33 @@ const items = [
 ];
 
 export default function FAQ() {
+  const [showMore, setShowMore] = useState(false);
+
   return (
     <div
       id="faq"
       className="scroll-mt-navbarHeight md:scroll-mt-navbarHeightDesktop"
     >
-      <Accordion items={items} />
+      <div
+        className={
+          (!showMore ? "max-h-96" : "max-h-[10000px]") +
+          " relative pb-16 transition-all overflow-hidden"
+        }
+      >
+        <Accordion items={items} />
+
+        <div
+          role="button"
+          onClick={() => setShowMore((b) => !b)}
+          className={
+            (!showMore ? "" : "rotate-180") +
+            " h-16 flex justify-center items-center p-4 stroke-secondary absolute bottom-0 left-0 right-0 bg-gradient-to-t from-20% from-white"
+          }
+        >
+          <More></More>
+        </div>
+      </div>
+
       <Text className="mt-4 font-serif">
         Deine Frage ist nicht dabei? Dann schreib uns gerne eine Mail.
       </Text>
