@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import MobileNavbar from "./MobileNavbar";
 
 export default function Navbar() {
@@ -6,24 +5,30 @@ export default function Navbar() {
     <div className="sticky top-0 z-10">
       <MobileNavbar />
 
-      <div className="justify-between hidden md:flex p-2 h-navbarHeightDesktop">
+      <div className="justify-between hidden md:flex p-2 h-navbarHeightDesktop md:p-7">
         <a
           href="#home"
-          className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif"
+          onClick={(event) => {
+            event.preventDefault();
+            document.getElementById("home").scrollIntoView({
+              behavior: "smooth",
+            });
+          }}
+          className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif hover:tracking-wider"
         >
           Home
         </a>
 
         <div className="flex gap-1">
           <a
-            href="#home"
+            href="#about-us"
             onClick={(event) => {
               event.preventDefault();
-              document.getElementById("home").scrollIntoView({
+              document.getElementById("about-us").scrollIntoView({
                 behavior: "smooth",
               });
             }}
-            className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif"
+            className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif hover:tracking-wider"
           >
             Über uns
           </a>
@@ -35,7 +40,7 @@ export default function Navbar() {
                 behavior: "smooth",
               });
             }}
-            className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif"
+            className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif hover:tracking-wider"
           >
             Sortiment
           </a>
@@ -47,7 +52,7 @@ export default function Navbar() {
                 behavior: "smooth",
               });
             }}
-            className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif"
+            className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif hover:tracking-wide"
           >
             FAQ
           </a>
@@ -59,7 +64,7 @@ export default function Navbar() {
                 behavior: "smooth",
               });
             }}
-            className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif"
+            className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif hover:tracking-wide"
           >
             Kontakt
           </a>

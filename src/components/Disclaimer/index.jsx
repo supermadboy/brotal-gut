@@ -10,7 +10,7 @@ export default function Disclaimer() {
     <div
       className={
         (closed ? "hidden " : "flex") +
-        " bg-primary p-8 items-center justify-center flex-col gap-4 relative "
+        " bg-primary p-8 items-center justify-center flex-col gap-4 relative md:py-16"
       }
     >
       <div

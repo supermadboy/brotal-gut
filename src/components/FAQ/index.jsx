@@ -219,7 +219,7 @@ export default function FAQ() {
       <div
         className={
           (!showMore ? "max-h-96" : "max-h-[10000px]") +
-          " relative pb-16 transition-all overflow-hidden"
+          " relative pb-24 mb-8 transition-all overflow-hidden md:mb-4"
         }
       >
         <Accordion items={items} />
@@ -229,18 +229,18 @@ export default function FAQ() {
           onClick={() => setShowMore((b) => !b)}
           className={
             (!showMore ? "" : "rotate-180") +
-            " h-16 flex justify-center items-center p-4 stroke-secondary absolute bottom-0 left-0 right-0 bg-gradient-to-t from-50% from-white"
+            " h-24 flex justify-center items-center p-4 pt-12 stroke-secondary absolute bottom-0 left-0 right-0 bg-gradient-to-t from-50% from-white"
           }
         >
           <More></More>
         </div>
       </div>
 
-      <Text className="font-serif italic text-small">
+      <Text className="font-serif italic text-small md:text-smallest-desktop">
         Deine Frage ist nicht dabei?
       </Text>
 
-      <Text className="font-serif italic text-small">
+      <Text className="font-serif italic text-small md:text-smallest-desktop">
         Dann schreib uns gerne eine Mail.
       </Text>
     </div>

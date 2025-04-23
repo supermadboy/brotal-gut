@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./images/Logo";
-import SubTitle from "./typo/SubTitle";
+import Text from "./typo/Text";
 
 const colors = [
   { primary: "192 129 93", secondary: "102 153 255" }, //dunkelbraun
@@ -40,7 +40,7 @@ export const LazySvg = () => {
       <div className="md:hidden fill-primary">
         <LazyMobileSvg />
       </div>
-      <div className="hidden md:block fill-primary">
+      <div className="hidden md:block fill-primary md:w-full">
         <LazyDesktopSvg />
       </div>
     </>
@@ -54,9 +54,9 @@ const LandingPage = () => {
         <div className="grow flex items-center w-3/4 max-w-3xl relative">
           <Logo />
           <div className="absolute bottom-24 flex w-full justify-center md:bottom-60">
-            <SubTitle className="whitespace-nowrap">
+            <Text className="whitespace-nowrap md:text-extra-large">
               Salmannsweilergasse 4
-            </SubTitle>
+            </Text>
           </div>
         </div>
       </div>

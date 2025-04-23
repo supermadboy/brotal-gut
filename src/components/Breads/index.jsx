@@ -123,7 +123,7 @@ const BreadAvailable = ({ available }) => {
     <div
       className={
         (available ? "bg-secondary" : "bg-transparent") +
-        " rounded-full w-4 h-4 mx-2 md:mx-6 md:w-8 md:h-8 flex-shrink-0"
+        " rounded-full w-4 h-4 mx-2 md:mx-12 md:w-8 md:h-8 flex-shrink-0"
       }
     />
   );
@@ -145,13 +145,13 @@ const items = [
     title: (
       <div className="flex items-center gap-4 w-full font-serif">
         <div className="flex-grow w-full" />
-        <Text className="text-center italic w-4 h-4 mx-2 md:mx-6 md:w-8 md:h-8 flex-shrink-0">
+        <Text className="text-center italic font-semibold w-4 h-4 mx-2 md:mx-12 md:w-8 md:h-8 flex-shrink-0">
           Di
         </Text>
-        <Text className="text-center italic w-4 h-4 mx-2 md:mx-6 md:w-8 md:h-8 flex-shrink-0">
+        <Text className="text-center italic font-semibold w-4 h-4 mx-2 md:mx-12 md:w-8 md:h-8 flex-shrink-0">
           Do
         </Text>
-        <Text className="text-center italic w-4 h-4 mx-2 md:mx-6 md:w-8 md:h-8 flex-shrink-0">
+        <Text className="text-center italic font-semibold w-4 h-4 mx-2 md:mx-12 md:w-8 md:h-8 flex-shrink-0">
           Fr
         </Text>
       </div>
@@ -171,7 +171,7 @@ export default function Breads() {
   return (
     <div
       id="breads"
-      className="md:grid grid-cols-3 gap-4 scroll-mt-navbarHeight md:scroll-mt-navbarHeightDesktop"
+      className="md:grid grid-cols-3 gap-8 scroll-mt-navbarHeight md:scroll-mt-navbarHeightDesktop md:mt-navbarHeightDesktop"
     >
       <Picture className="hidden md:block" src={`bread/${clickedItem}`} />
 

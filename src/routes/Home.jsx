@@ -18,33 +18,35 @@ const Home = () => {
       <Disclaimer />
       <div className="flex flex-col gap-4 mb-4">
         <AboutUs />
-        <div className="mx-4">
+        <div className="mx-4 md:mx-12">
           <Breads />
         </div>
-        <div className="mx-16">
+        <div className="mx-16 flex justify-center items-center md:min-h-dvh">
           <LazySvg />
         </div>
-        <div className="mx-4">
+        <div className="mx-4 md:mx-7 ">
           <FAQ />
         </div>
       </div>
 
       <footer
         id="contact"
-        className="text-center mt-12 px-4 py-12 flex flex-col gap-8 justify-between items-center bg-primary flex-wrap text-white fill-white md:flex-row md:text-left"
+        className="text-center mt-12 px-4 py-12 flex flex-col gap-8 justify-between items-center bg-primary flex-wrap text-white fill-white md:flex-row md:text-left md:px-7 md:py-20"
       >
         <div className="hidden md:flex flex-col">
           <div className="w-40 mb-2">
             <Logo />
           </div>
-          <Text>© {new Date().getFullYear()}, Brotalgut GbR</Text>
+          <Text className="md:text-smallest-desktop">
+            © {new Date().getFullYear()}, Brotalgut GbR
+          </Text>
         </div>
-        <div>
+        <div className="md:flex flex-col items-center">
           <Text className="uppercase">Öffnungszeiten</Text>
           <Text>Di, Do & Fr</Text>
           <Text>12 - 18 Uhr</Text>
         </div>
-        <div>
+        <div className="md:flex flex-col items-center">
           <Text className="uppercase">Adresse</Text>
           <Text>Salmannsweilergasse 4</Text>
           <Text>78462 Konstanz</Text>

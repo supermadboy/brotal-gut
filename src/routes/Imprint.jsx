@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import EmailLink from "../components/typo/EmailLink";
 import SubTitle from "../components/typo/SubTitle";
-import Title from "../components/typo/Title";
 import Text from "../components/typo/Text";
 
 const Imprint = () => {
@@ -10,30 +9,36 @@ const Imprint = () => {
   return (
     <div className="bg-primary min-h-screen flex flex-col p-4 md:p-8">
       <div className="flex justify-between">
-        <Title className="uppercase">Impressum</Title>
+        <SubTitle className="uppercase">Impressum</SubTitle>
         <Link
           to="/"
           className="uppercase text-xl md:text-3xl hover:italic focus:italic hover:font-serif focus:font-serif"
         >
-          zurück
+          <SubTitle>zurück</SubTitle>
         </Link>
       </div>
-      <div className="flex flex-col grow border-y md:flex-row md:py-4 md:my-2 md:border-y-2 ">
+      <div className="flex flex-col grow border-y md:flex-row md:py-4 md:my-2 md:border-y-4 ">
         <div className="border-b mb-2 pb-2 md:flex-1 md:border-none md:flex-grow-[2]">
           <div className="text-center sticky top-0 pt-2 md:text-left">
-            <SubTitle>Brotalgut GbR</SubTitle>
-            <SubTitle className="whitespace-nowrap">
+            <SubTitle className={"md:text-extra-extra-large"}>
+              Brotalgut GbR
+            </SubTitle>
+            <SubTitle className="whitespace-nowrap md:text-extra-extra-large">
               Salmannsweilergasse 4
             </SubTitle>
-            <SubTitle className="mb-4 md:mb-16">78462 Konstanz</SubTitle>
-            <SubTitle>Nora & Jörn Ridder</SubTitle>
+            <SubTitle className="mb-4 md:mb-16 md:text-extra-extra-large">
+              78462 Konstanz
+            </SubTitle>
+            <SubTitle className={"md:text-extra-extra-large"}>
+              Nora & Jörn Ridder
+            </SubTitle>
             <EmailLink mail="info@brotalgut-konstanz.de">
               info@brotalgut-konstanz.de
             </EmailLink>
           </div>
         </div>
         <div className="md:mt-2 md:flex-1 md:flex-grow-[3]">
-          <div className="text-center border-b mb-2 md:border-b-2  md:text-left ">
+          <div className="text-center border-b mb-2 md:border-b-4  md:text-left ">
             <div className="mb-2">
               <Text className="uppercase">Gestaltung</Text>
               <Link

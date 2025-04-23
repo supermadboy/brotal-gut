@@ -11,24 +11,28 @@ export default function AccordionItem({
   const [open, isOpen] = useState(false);
 
   return (
-    <div
-      className={
-        (children && "cursor-pointer") +
-        " first:border-t-0 border-t-2 border-solid border-black"
-      }
-      onClick={() => {
-        isOpen((a) => !a);
-        setClickedItem(name);
-      }}
-    >
-      <div role="button" className={"  py flex justify-between items-center "}>
+    <div className={" first:border-t-0 border-t-2 border-solid border-black"}>
+      <div
+        role="button"
+        className={
+          (children && "cursor-pointer") +
+          " flex justify-between items-center md:py-1"
+        }
+        onClick={() => {
+          isOpen((a) => !a);
+          setClickedItem(name);
+        }}
+        onMouseEnter={() => {
+          setClickedItem(name);
+        }}
+      >
         {title}
         <div className={(children ?? "invisible") + " text-secondary"}>
           {open ? <Minus /> : <Plus />}
         </div>
       </div>
       <div
-        className={(open ? "block" : "hidden") + " py-2 md:pl-1/5 font-serif"}
+        className={(open ? "block" : "hidden") + " py-2 md:pl-1/3 font-serif"}
       >
         {children}
       </div>

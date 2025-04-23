@@ -12,13 +12,20 @@ export default function Carousel({ images, vertical = false }) {
     slidesToScroll: 1,
     vertical,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
+    centerMode: true,
+    variableWidth: true,
   };
 
   return (
     <Slider {...settings}>
-      {images.map((img) => (
-        <Picture src={img} key={img} className="max-h-dvh block" />
+      {images.map(({ src, width }) => (
+        <Picture
+          src={src}
+          key={src}
+          className="max-h-dvh block"
+          style={{ width }}
+        />
       ))}
     </Slider>
   );
