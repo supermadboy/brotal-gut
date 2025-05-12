@@ -115,18 +115,23 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <div className="max-h-dvh">
+      <div className="hidden max-h-dvh md:block">
         <Carousel
           images={[
-            { src: "horizontal1", width: 1000 },
-            { src: "horizontal2", width: 200 },
-            { src: "horizontal3", width: 500 },
-            { src: "horizontal4", width: 200 },
-            { src: "horizontal5", width: 600 },
-            { src: "horizontal6", width: 500 },
-            { src: "horizontal7", width: 900 },
+            { src: "horizontal/1", width: 633 },
+            { src: "horizontal/2", width: 633 },
+            { src: "horizontal/3", width: 633 },
+            { src: "horizontal/4", width: 1425 },
+            { src: "horizontal/5", width: 633 },
+            { src: "horizontal/6", width: 1425 },
+            { src: "horizontal/7", width: 633 },
           ]}
         />
+      </div>
+      <div className="flex flex-col gap-2 md:hidden">
+        <Picture src={"mobile/1"} className="max-w-full block" />
+        <Picture src={"mobile/2"} className="max-w-full block" />
+        <Picture src={"mobile/3"} className="max-w-full block" />
       </div>
     </div>
   );

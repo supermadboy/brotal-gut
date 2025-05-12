@@ -9,6 +9,7 @@ import LandingPage, { LazySvg } from "../components/LandingPage";
 import Navbar from "../components/Navbar";
 import EmailLink from "../components/typo/EmailLink";
 import Text from "../components/typo/Text";
+import Picture from "../components/Picture";
 
 const Home = () => {
   return (
@@ -21,8 +22,12 @@ const Home = () => {
         <div className="mx-4 md:mx-12">
           <Breads />
         </div>
-        <div className="mx-16 flex justify-center items-center md:min-h-dvh">
-          <LazySvg />
+        <div className=" flex justify-center items-center md:mx-16 md:min-h-dvh">
+          <div className="w-full hidden md:block">
+            <LazySvg />
+          </div>
+
+          <Picture src={"mobile/4"} className="max-w-full md:hidden" />
         </div>
         <div className="mx-4 md:mx-7 ">
           <FAQ />
