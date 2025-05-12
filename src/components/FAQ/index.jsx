@@ -241,7 +241,15 @@ export default function FAQ() {
       </Text>
 
       <Text className="font-serif italic text-small md:text-smallest-desktop">
-        Dann schreib uns gerne eine Mail.
+        Dann schreib uns gerne eine{" "}
+        <a
+          href="mailto:info@brotalgut-konstanz.de"
+          className="cursor-pointer text-primary"
+          target="blank"
+        >
+          Mail
+        </a>
+        .
       </Text>
     </div>
   );

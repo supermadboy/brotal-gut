@@ -177,6 +177,15 @@ export default function Breads() {
 
       <div className="col-span-2">
         <Accordion items={items} setClickedItem={setClickedItem} />
+        <div className="border-t-2 border-solid border-black">
+          <Text className="flex-grow w-full">
+            + verschiedene saisonale Backwaren
+          </Text>
+        </div>
+
+        <Text className="font-serif italic mt-10 md:text-smallest-desktop">
+          Alle Produkte sind vorhanden solange der Vorrat reicht
+        </Text>
       </div>
     </div>
   );

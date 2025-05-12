@@ -1,5 +1,6 @@
 import Carousel from "../Carousel";
 import Picture from "../Picture";
+import ExternalLink from "../typo/ExternalLink";
 import Text from "../typo/Text";
 
 export default function AboutUs() {
@@ -49,21 +50,31 @@ export default function AboutUs() {
               </Text>
 
               <div className="flex flex-col gap-2">
-                <Text className="md:text-smallest-desktop">
-                  HegauKorn, Engen <sup>(DE)</sup>
-                </Text>
-                <Text className="md:text-smallest-desktop">
-                  Moulin Bourgeois, Verdelot <sup>(FR)</sup>
-                </Text>
-                <Text className="md:text-smallest-desktop">
-                  Haettelihof, Konstanz <sup>(DE)</sup>
-                </Text>
-                <Text className="md:text-smallest-desktop">
-                  BioGroßhandel Rinklin, Kaiserstuhl <sup>(DE)</sup>
-                </Text>
-                <Text className="md:text-smallest-desktop">
-                  Konditorhandel Pfersich, Ulm <sup>(DE)</sup>
-                </Text>
+                <ExternalLink href="https://www.hegaukorn.de/">
+                  <Text className="md:text-smallest-desktop">
+                    HegauKorn, Engen <sup>(DE)</sup>
+                  </Text>
+                </ExternalLink>
+                <ExternalLink href="https://www.moulins-bourgeois.com/">
+                  <Text className="md:text-smallest-desktop">
+                    Moulin Bourgeois, Verdelot <sup>(FR)</sup>
+                  </Text>
+                </ExternalLink>
+                <ExternalLink href="https://haettelihof.de/">
+                  <Text className="md:text-smallest-desktop">
+                    Haettelihof, Konstanz <sup>(DE)</sup>
+                  </Text>
+                </ExternalLink>
+                <ExternalLink href="https://shop.rinklin-naturkost.de/">
+                  <Text className="md:text-smallest-desktop">
+                    BioGroßhandel Rinklin, Kaiserstuhl <sup>(DE)</sup>
+                  </Text>
+                </ExternalLink>
+                <ExternalLink href="https://pfersich.de/">
+                  <Text className="md:text-smallest-desktop">
+                    Konditorhandel Pfersich, Ulm <sup>(DE)</sup>
+                  </Text>
+                </ExternalLink>
               </div>
             </div>
 
@@ -73,21 +84,31 @@ export default function AboutUs() {
               </Text>
 
               <div className="flex flex-col gap-2">
-                <Text className="md:text-smallest-desktop">
-                  Restaurant Wessenberg, Konstanz <sup>(DE)</sup>
-                </Text>
-                <Text className="md:text-smallest-desktop">
-                  Restaurant Heinrichs, Konstanz <sup>(DE)</sup>
-                </Text>
-                <Text className="md:text-smallest-desktop">
-                  DOPPIO Café, Konstanz <sup>(DE)</sup>
-                </Text>
-                <Text className="md:text-smallest-desktop">
-                  No.elf Spezialitätenkaffee, Konstanz <sup>(DE)</sup>
-                </Text>
-                <Text className="md:text-smallest-desktop">
-                  Ophelia Gourmetrestaurant, Konstanz <sup>(DE)</sup>
-                </Text>
+                <ExternalLink href="https://wessenberg.de/">
+                  <Text className="md:text-smallest-desktop">
+                    Restaurant Wessenberg, Konstanz <sup>(DE)</sup>
+                  </Text>
+                </ExternalLink>
+                <ExternalLink href="https://das-heinrich.de/">
+                  <Text className="md:text-smallest-desktop">
+                    Restaurant Heinrichs, Konstanz <sup>(DE)</sup>
+                  </Text>
+                </ExternalLink>
+                <ExternalLink href="https://doppio-konstanz.de/">
+                  <Text className="md:text-smallest-desktop">
+                    DOPPIO Café, Konstanz <sup>(DE)</sup>
+                  </Text>
+                </ExternalLink>
+                <ExternalLink href="https://no-elf.de/">
+                  <Text className="md:text-smallest-desktop">
+                    No.elf Spezialitätenkaffee, Konstanz <sup>(DE)</sup>
+                  </Text>
+                </ExternalLink>
+                <ExternalLink href="https://www.restaurant-ophelia.de/">
+                  <Text className="md:text-smallest-desktop">
+                    Ophelia Gourmetrestaurant, Konstanz <sup>(DE)</sup>
+                  </Text>
+                </ExternalLink>
               </div>
             </div>
           </div>
