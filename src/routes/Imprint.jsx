@@ -7,8 +7,8 @@ const Imprint = () => {
   window.scrollTo({ top: 0 });
 
   return (
-    <div className="bg-primary min-h-screen flex flex-col p-4 md:p-8">
-      <div className="flex justify-between">
+    <div className="bg-primary min-h-screen flex flex-col px-4 pb-4 md:px-8 md:pb-8">
+      <div className="bg-primary flex justify-between sticky top-0 border-b pt-4 md:pt-8 md:pb-4 md:mb-2 md:border-b-4">
         <SubTitle className="uppercase">Impressum</SubTitle>
         <Link
           to="/"
@@ -17,9 +17,9 @@ const Imprint = () => {
           <SubTitle>zurück</SubTitle>
         </Link>
       </div>
-      <div className="flex flex-col grow border-y md:flex-row md:py-4 md:my-2 md:border-y-4 ">
+      <div className="flex flex-col grow border-b md:flex-row md:pb-4 md:mb-2 md:border-b-4 ">
         <div className="border-b mb-2 pb-2 md:flex-1 md:border-none md:flex-grow-[2]">
-          <div className="text-center sticky top-0 pt-2 md:text-left">
+          <div className="text-center sticky top-navbarHeight pt-2 md:top-navbarHeightDesktop md:text-left">
             <SubTitle className={"md:text-extra-extra-large"}>
               Brotalgut GbR
             </SubTitle>
