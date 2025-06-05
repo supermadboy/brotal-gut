@@ -3,6 +3,7 @@ import Picture from "../Picture";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./slick.css";
 
 export default function Carousel({ images, vertical = false }) {
   var settings = {
@@ -11,23 +12,24 @@ export default function Carousel({ images, vertical = false }) {
     slidesToShow: 1,
     slidesToScroll: 1,
     vertical,
-    arrows: false,
+    arrows: true,
     autoplay: false,
     centerMode: true,
     variableWidth: true,
-    touchMove: false,
   };
 
   return (
-    <Slider {...settings}>
-      {images.map(({ src, width }) => (
-        <Picture
-          src={src}
-          key={src}
-          className="max-h-dvh block px-2"
-          style={{ width }}
-        />
-      ))}
-    </Slider>
+    <div className="px-7">
+      <Slider {...settings}>
+        {images.map(({ src, width }) => (
+          <Picture
+            src={src}
+            key={src}
+            className="max-h-dvh block px-2"
+            style={{ width }}
+          />
+        ))}
+      </Slider>
+    </div>
   );
 }
