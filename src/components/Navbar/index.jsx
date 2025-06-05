@@ -14,7 +14,7 @@ export default function Navbar() {
               behavior: "smooth",
             });
           }}
-          className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif hover:tracking-wider"
+          className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus-visible:italic hover:font-serif focus-visible:font-serif hover:tracking-wider"
         >
           Home
         </a>
@@ -28,7 +28,7 @@ export default function Navbar() {
                 behavior: "smooth",
               });
             }}
-            className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif hover:tracking-wider"
+            className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus-visible:italic hover:font-serif focus-visible:font-serif hover:tracking-wider"
           >
             Über uns
           </a>
@@ -40,9 +40,9 @@ export default function Navbar() {
                 behavior: "smooth",
               });
             }}
-            className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif hover:tracking-wider"
+            className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus-visible:italic hover:font-serif focus-visible:font-serif hover:tracking-wider"
           >
-            Sortiment
+            Backplan
           </a>
           <a
             href="#faq"
@@ -52,7 +52,7 @@ export default function Navbar() {
                 behavior: "smooth",
               });
             }}
-            className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif hover:tracking-wide"
+            className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus-visible:italic hover:font-serif focus-visible:font-serif hover:tracking-wide"
           >
             FAQ
           </a>
@@ -64,7 +64,7 @@ export default function Navbar() {
                 behavior: "smooth",
               });
             }}
-            className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus:italic hover:font-serif focus:font-serif hover:tracking-wide"
+            className="bg-primary rounded-full text-3xl px-4 py-2 hover:italic focus-visible:italic hover:font-serif focus-visible:font-serif hover:tracking-wide"
           >
             Kontakt
           </a>

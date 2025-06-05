@@ -8,11 +8,11 @@ const Imprint = () => {
 
   return (
     <div className="bg-primary min-h-screen flex flex-col px-4 pb-4 md:px-8 md:pb-8">
-      <div className="bg-primary flex justify-between sticky top-0 border-b pt-4 md:pt-8 md:pb-4 md:mb-2 md:border-b-4">
+      <div className="bg-primary z-10 flex justify-between sticky top-0 border-b pt-4 md:pt-8 md:pb-4 md:mb-2 md:border-b-4">
         <SubTitle className="uppercase">Impressum</SubTitle>
         <Link
           to="/"
-          className="uppercase text-xl md:text-3xl hover:italic focus:italic hover:font-serif focus:font-serif"
+          className="uppercase text-xl md:text-3xl hover:italic focus-visible:italic hover:font-serif focus-visible:font-serif"
         >
           <SubTitle>zurück</SubTitle>
         </Link>
@@ -42,7 +42,7 @@ const Imprint = () => {
             <div className="mb-2">
               <Text className="uppercase">Gestaltung</Text>
               <Link
-                className="flex items-center justify-center gap-1 hover:italic focus:italic hover:font-serif focus:font-serif md:justify-start"
+                className="flex items-center justify-center gap-1 hover:italic focus-visible:italic hover:font-serif focus-visible:font-serif md:justify-start"
                 to="https://katharina-peters.eu/"
                 target="_blank"
               >
@@ -71,7 +71,7 @@ const Imprint = () => {
               <Text className="uppercase">Programmierung</Text>
 
               <Link
-                className="flex items-center justify-center gap-1 hover:italic focus:italic hover:font-serif focus:font-serif md:justify-start"
+                className="flex items-center justify-center gap-1 hover:italic focus-visible:italic hover:font-serif focus-visible:font-serif md:justify-start"
                 to="https://www.supermittel.com"
                 target="_blank"
               >
@@ -100,7 +100,7 @@ const Imprint = () => {
               <Text className="uppercase">Fotos</Text>
 
               <Link
-                className="flex items-center justify-center gap-1 hover:italic focus:italic hover:font-serif focus:font-serif md:justify-start"
+                className="flex items-center justify-center gap-1 hover:italic focus-visible:italic hover:font-serif focus-visible:font-serif md:justify-start"
                 to="https://www.milenaschilling.de"
                 target="_blank"
               >
@@ -129,7 +129,7 @@ const Imprint = () => {
               <Text className="uppercase">Instagram</Text>
 
               <Link
-                className="flex items-center justify-center gap-1 hover:italic focus:italic hover:font-serif focus:font-serif md:justify-start"
+                className="flex items-center justify-center gap-1 hover:italic focus-visible:italic hover:font-serif focus-visible:font-serif md:justify-start"
                 to="https://www.instagram.com/mhllat/"
                 target="_blank"
               >

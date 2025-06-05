@@ -9,6 +9,7 @@ export default function Accordion({ className, items, setClickedItem }) {
           title={item.title}
           setClickedItem={setClickedItem}
           name={item.name}
+          disabled={item.disabled}
         >
           {item.children}
         </AccordionItem>

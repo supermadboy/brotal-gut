@@ -79,7 +79,7 @@ const availableBreads = [
   {
     name: "Dinkelvollkornbrot",
     tuesday: false,
-    thursday: true,
+    thursday: false,
     friday: true,
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
@@ -87,7 +87,7 @@ const availableBreads = [
   {
     name: "Porridgebrot",
     tuesday: false,
-    thursday: true,
+    thursday: false,
     friday: true,
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
@@ -132,7 +132,7 @@ const BreadAvailable = ({ available }) => {
 const breadToTitle = ({ name, tuesday, thursday, friday }) => {
   return (
     <div className="flex items-center gap-4 w-full">
-      <Text className="flex-grow w-full">{name}</Text>
+      <Text className="flex-grow w-full md:text-smallest-desktop">{name}</Text>
       <BreadAvailable available={tuesday} />
       <BreadAvailable available={thursday} />
       <BreadAvailable available={friday} />
@@ -145,17 +145,18 @@ const items = [
     title: (
       <div className="flex items-center gap-4 w-full font-serif">
         <div className="flex-grow w-full" />
-        <Text className="text-center italic font-semibold w-4 h-4 mx-2 md:mx-12 md:w-8 md:h-8 flex-shrink-0">
+        <Text className="text-center italic w-4 h-4 mx-2 md:mx-12 md:w-8 md:h-8 flex-shrink-0">
           Di
         </Text>
-        <Text className="text-center italic font-semibold w-4 h-4 mx-2 md:mx-12 md:w-8 md:h-8 flex-shrink-0">
+        <Text className="text-center italic w-4 h-4 mx-2 md:mx-12 md:w-8 md:h-8 flex-shrink-0">
           Do
         </Text>
-        <Text className="text-center italic font-semibold w-4 h-4 mx-2 md:mx-12 md:w-8 md:h-8 flex-shrink-0">
+        <Text className="text-center italic w-4 h-4 mx-2 md:mx-12 md:w-8 md:h-8 flex-shrink-0">
           Fr
         </Text>
       </div>
     ),
+    disabled: true,
   },
 
   ...availableBreads.map((bread) => ({
@@ -179,12 +180,12 @@ export default function Breads() {
         <Accordion items={items} setClickedItem={setClickedItem} />
         <div className="border-t-2 border-solid border-black">
           <Text className="flex-grow w-full">
-            + verschiedene saisonale Backwaren
+            & verschiedene saisonale Backwaren
           </Text>
         </div>
 
         <Text className="font-serif italic mt-10 md:text-smallest-desktop">
-          Alle Produkte sind vorhanden solange der Vorrat reicht
+          Alle Produkte sind vorhanden solange der Vorrat reicht.
         </Text>
       </div>
     </div>

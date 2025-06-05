@@ -16,7 +16,7 @@ export default function AboutUs() {
           <Picture src="vertical4" className="hidden md:block" />
         </div>
 
-        <div className="pt-12">
+        <div className="md:pt-12">
           <Text
             id="about-us"
             className="text-center sticky top-navbarHeight px-4 py-12 scroll-mt-navbarHeight md:scroll-mt-navbarHeightDesktop  md:top-navbarHeightDesktop  md:text-left md:px-20 md:pb-[1000px] md:pt-8"
@@ -29,7 +29,7 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <div className="grid-cols-2 md:grid md:min-h-dvh md:p-20">
+      <div className="grid-cols-2 md:grid md:min-h-dvh md:p-3">
         <Text className="text-center px-4 py-12  md:text-left">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
@@ -43,7 +43,7 @@ export default function AboutUs() {
         </Text>
 
         <div className="border-t-2 solid border-black mx-4 text-center md:text-left md:border-t-0 md:flex md:justify-end">
-          <div>
+          <div className="md:min-w-[400px]">
             <div className="px-4 pt-12 pb-4">
               <Text className="uppercase mb-2 md:text-smallest-desktop">
                 Unsere Lieferanten
@@ -107,6 +107,11 @@ export default function AboutUs() {
                 <ExternalLink href="https://www.restaurant-ophelia.de/">
                   <Text className="md:text-smallest-desktop">
                     Ophelia Gourmetrestaurant, Konstanz <sup>(DE)</sup>
+                  </Text>
+                </ExternalLink>
+                <ExternalLink href="https://haettelihof.de/cafe-selma">
+                  <Text className="md:text-smallest-desktop">
+                    Café Selma, Konstanz <sup>(DE)</sup>
                   </Text>
                 </ExternalLink>
               </div>

@@ -7,6 +7,7 @@ export default function AccordionItem({
   children,
   setClickedItem,
   name,
+  disabled = false,
 }) {
   const [open, isOpen] = useState(false);
 
@@ -19,6 +20,9 @@ export default function AccordionItem({
           " flex justify-between items-center md:py-1"
         }
         onClick={() => {
+          if (disabled) {
+            return;
+          }
           isOpen((a) => !a);
           setClickedItem(name);
         }}

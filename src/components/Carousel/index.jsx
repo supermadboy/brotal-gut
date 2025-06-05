@@ -15,6 +15,7 @@ export default function Carousel({ images, vertical = false }) {
     autoplay: false,
     centerMode: true,
     variableWidth: true,
+    touchMove: false,
   };
 
   return (
@@ -23,7 +24,7 @@ export default function Carousel({ images, vertical = false }) {
         <Picture
           src={src}
           key={src}
-          className="max-h-dvh block"
+          className="max-h-dvh block px-2"
           style={{ width }}
         />
       ))}

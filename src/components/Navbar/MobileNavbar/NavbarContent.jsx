@@ -15,28 +15,28 @@ export default function NavbarConent({ toggled, toggle }) {
     >
       <a
         href="#about-us"
-        className="hover:italic focus:italic hover:font-serif focus:font-serif"
+        className="hover:italic focus-visible:italic hover:font-serif focus-visible:font-serif"
         onClick={() => toggle(false)}
       >
         Über uns
       </a>
       <a
         href="#breads"
-        className="hover:italic focus:italic hover:font-serif focus:font-serif"
+        className="hover:italic focus-visible:italic hover:font-serif focus-visible:font-serif"
         onClick={() => toggle(false)}
       >
-        Sortiment
+        Backplan
       </a>
       <a
         href="#faq"
-        className="hover:italic focus:italic hover:font-serif focus:font-serif"
+        className="hover:italic focus-visible:italic hover:font-serif focus-visible:font-serif"
         onClick={() => toggle(false)}
       >
         FAQ
       </a>
       <a
         href="#contact"
-        className="hover:italic focus:italic hover:font-serif focus:font-serif"
+        className="hover:italic focus-visible:italic hover:font-serif focus-visible:font-serif"
         onClick={() => toggle(false)}
       >
         Kontakt
@@ -45,7 +45,7 @@ export default function NavbarConent({ toggled, toggle }) {
 
       <div className="flex gap-4 mt-8">
         <Insta />
-        <EmailLink />
+        <EmailLink mail="info@brotalgut-konstanz.de" />
       </div>
     </div>
   );
