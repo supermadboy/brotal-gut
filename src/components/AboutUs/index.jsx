@@ -21,26 +21,42 @@ export default function AboutUs() {
             id="about-us"
             className="text-center sticky top-navbarHeight px-4 py-12 scroll-mt-navbarHeight md:scroll-mt-navbarHeightDesktop  md:top-navbarHeightDesktop  md:text-left md:px-20 md:pb-[1000px] md:pt-8"
           >
-            Hallo, wir sind Nora & Jörn! In unserer kleinen, transparenten
-            Backstube backen wir frisches Sauerteigbrot und andere handgemachte
-            Produkte. Wir arbeiten mit hochwertigen Rohstoffen, im kleinen
-            Familienbetrieb in Konstanz am Bodensee
+            Hallo, wir sind Nora & Jörn! In unserer kleinen,{" "}
+            <i className="font-serif">transparenten</i> Backstube backen wir
+            frisches Sauerteigbrot und andere{" "}
+            <i className="font-serif">handgemachte</i> Produkte. Wir arbeiten
+            mit hochwertigen Rohstoffen, im kleinen Familienbetrieb in Konstanz
+            am Bodensee
           </Text>
         </div>
       </div>
 
       <div className="grid-cols-2 md:grid md:min-h-dvh md:p-3">
-        <Text className="text-center px-4 py-12  md:text-left">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet.
-        </Text>
+        <div className="text-center px-4 py-12 md:text-left">
+          <Text className="mb-4">
+            Mitten in der Konstanzer Altstadt liegt unsere Backstube, die mehr
+            ist als nur ein Ort für gutes Brot. Sie ist ein Ort der Begegnung,
+            der Leidenschaft. Bei Brotalgut kultivieren wir gemeinsam mit
+            unserem Team Tag für Tag unser Handwerk und unsere Überzeugung für
+            hochwertige Lebensmittel.
+          </Text>
+          <Text className="mb-4">
+            Gemeinsam haben wir, Jörn & Nora, als Quereinsteiger im Jahr 2023
+            den Sprung in die Selbstständigkeit gewagt, um einen Ort zu schaffen
+            der Mut macht sich auszuprobieren - der zeigt, dass echtes Handwerk
+            nicht kräftezehrend und altmodisch ist, sondern nachhaltig, kreativ
+            und sinnstiftend. Und unglaublich erfüllend. Besonders wenn man
+            spürt, wie aus Mehl, Wasser, Salz und Zeit ein Lebensmittel wird,
+            das Menschen verbindet.
+          </Text>
+          <Text className="mb-4">
+            Ob klassisches Dinkelkastenbrot oder Zimtschnecke – jedes Produkt
+            hier hat eine eigene Geschichte. Und die besten entstehen dort, wo
+            sich Generationen austauschen, Visionen reifen dürfen und man sich
+            auf Augenhöhe begegnet. Der Sauerteigstarter? Über 10 Jahre alt. Der
+            Anspruch? Qualität über Quantität. Immer.
+          </Text>
+        </div>
 
         <div className="border-t-2 solid border-black mx-4 text-center md:text-left md:border-t-0 md:flex md:justify-end">
           <div className="md:min-w-[400px]">
