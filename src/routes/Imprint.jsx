@@ -124,6 +124,9 @@ const Imprint = () => {
                   </g>
                 </svg>
               </Link>
+              <div className="mb-2">
+                <Text>ehrlichagency</Text>
+              </div>
             </div>
             <div className="mb-2">
               <Text className="uppercase">Instagram</Text>

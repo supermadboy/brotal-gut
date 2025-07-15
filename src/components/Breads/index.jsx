@@ -29,6 +29,14 @@ const availableBreads = [
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
   },
   {
+    name: "Weizenvollkornbrot",
+    tuesday: true,
+    thursday: true,
+    friday: false,
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
+  },
+  {
     name: "Walnussbrot",
     tuesday: true,
     thursday: false,
@@ -45,22 +53,6 @@ const availableBreads = [
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
   },
   {
-    name: "Dinkelkasten",
-    tuesday: false,
-    thursday: true,
-    friday: true,
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
-  },
-  {
-    name: "Roggenkasten",
-    tuesday: false,
-    thursday: true,
-    friday: true,
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
-  },
-  {
     name: "Rundes Roggenbrot",
     tuesday: true,
     thursday: false,
@@ -69,10 +61,34 @@ const availableBreads = [
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
   },
   {
-    name: "Weizenvollkornbrot",
+    name: "Simit",
     tuesday: true,
-    thursday: true,
+    thursday: false,
     friday: false,
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
+  },
+  {
+    name: "Dinkelkastenbrot",
+    tuesday: false,
+    thursday: true,
+    friday: true,
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
+  },
+  {
+    name: "Roggenkastenbrot",
+    tuesday: false,
+    thursday: true,
+    friday: true,
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
+  },
+  {
+    name: "Zimtschnecken",
+    tuesday: false,
+    thursday: true,
+    friday: true,
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
   },
@@ -96,22 +112,6 @@ const availableBreads = [
     name: "Dinkelseelen",
     tuesday: false,
     thursday: false,
-    friday: true,
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
-  },
-  {
-    name: "Simit",
-    tuesday: true,
-    thursday: false,
-    friday: false,
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
-  },
-  {
-    name: "Zimtschnecken",
-    tuesday: false,
-    thursday: true,
     friday: true,
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",

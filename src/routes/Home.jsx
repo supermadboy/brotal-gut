@@ -49,7 +49,7 @@ const Home = () => {
         <div className="md:flex flex-col items-center">
           <Text className="uppercase">Öffnungszeiten</Text>
           <Text>Di, Do & Fr</Text>
-          <Text>12 - 18 Uhr</Text>
+          <Text>12:00 - 18:00 Uhr</Text>
         </div>
         <div className="md:flex flex-col items-center">
           <Text className="uppercase">Adresse</Text>

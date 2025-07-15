@@ -130,6 +130,11 @@ export default function AboutUs() {
                     Café Selma, Konstanz <sup>(DE)</sup>
                   </Text>
                 </ExternalLink>
+                <ExternalLink href="https://www.instagram.com/matcho.club/">
+                  <Text className="md:text-smallest-desktop">
+                    matcho Konstanz–coffee, matcha & goods (DE) <sup>(DE)</sup>
+                  </Text>
+                </ExternalLink>
               </div>
             </div>
           </div>
@@ -139,19 +144,22 @@ export default function AboutUs() {
       <div className="hidden max-h-dvh md:block">
         <Carousel
           images={[
-            { src: "horizontal/1", width: 633 },
-            { src: "horizontal/2", width: 633 },
-            { src: "horizontal/3", width: 633 },
-            { src: "horizontal/4", width: 1425 },
-            { src: "horizontal/5", width: 633 },
-            { src: "horizontal/6", width: 1425 },
-            { src: "horizontal/7", width: 633 },
+            { src: "horizontal/2_Horizontale-16-9", width: 479 },
+            { src: "horizontal/3_Horizontale-16-9", width: 479 },
+            { src: "horizontal/4_Horizontale-16-9", width: 1478 },
+            { src: "horizontal/5_Horizontale-16-9", width: 479 },
+            { src: "horizontal/6_Horizontale-16-9", width: 1478 },
+            { src: "horizontal/7_Horizontale-16-9", width: 479 },
+            { src: "horizontal/1_Horizontale-16-9", width: 479 },
           ]}
         />
       </div>
       <div className="flex flex-col gap-2 md:hidden">
         <Picture src={"mobile/1"} className="max-w-full block" />
-        <Picture src={"mobile/2"} className="max-w-full block" />
+        <Picture
+          src={"mobile/1_Horizontale-16-9"}
+          className="max-w-full block"
+        />
         <Picture src={"mobile/3"} className="max-w-full block" />
       </div>
     </div>
