@@ -132,7 +132,7 @@ const BreadAvailable = ({ available }) => {
 const breadToTitle = ({ name, tuesday, thursday, friday }) => {
   return (
     <div className="flex items-center gap-4 w-full">
-      <Text className="flex-grow w-full md:text-smallest-desktop">{name}</Text>
+      <Text className="flex-grow w-full ">{name}</Text>
       <BreadAvailable available={tuesday} />
       <BreadAvailable available={thursday} />
       <BreadAvailable available={friday} />
@@ -161,7 +161,9 @@ const items = [
 
   ...availableBreads.map((bread) => ({
     title: breadToTitle(bread),
-    children: <Text>{bread.description}</Text>,
+    children: (
+      <Text className="md:text-smallest-desktop">{bread.description}</Text>
+    ),
     name: bread.name,
   })),
 ];
@@ -174,18 +176,23 @@ export default function Breads() {
       id="breads"
       className="md:grid grid-cols-3 gap-8 scroll-mt-navbarHeight md:scroll-mt-navbarHeightDesktop md:mt-navbarHeightDesktop"
     >
-      <Picture className="hidden md:block" src={`bread/${clickedItem}`} />
+      <Picture
+        className="hidden md:block h-[800px]"
+        src={`bread/${clickedItem}`}
+      />
 
-      <div className="col-span-2">
-        <Accordion items={items} setClickedItem={setClickedItem} />
-        <div className="border-t-2 border-solid border-black">
-          <Text className="flex-grow w-full">
-            & verschiedene saisonale Backwaren
-          </Text>
+      <div className="flex flex-col justify-between col-span-2">
+        <div>
+          <Accordion items={items} setClickedItem={setClickedItem} />
+          <div className="border-t-2 border-solid border-black">
+            <Text className="flex-grow w-full">
+              & verschiedene saisonale Backwaren
+            </Text>
+          </div>
         </div>
 
         <Text className="font-serif italic mt-10 md:text-smallest-desktop">
-          Alle Produkte sind vorhanden solange der Vorrat reicht.
+          Alle Produkte sind vorhanden, so lange der Vorrat reicht.
         </Text>
       </div>
     </div>

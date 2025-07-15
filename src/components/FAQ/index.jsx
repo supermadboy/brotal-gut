@@ -2,13 +2,14 @@ import { useState } from "react";
 import Accordion from "../Accordion";
 import Text from "../typo/Text";
 import More from "../images/More";
+import ExternalLink from "../typo/ExternalLink";
 
 const items = [
   {
     title: <Text>Kann man euer Brot vorbestellen?</Text>,
     children: (
       <>
-        <Text>
+        <Text className="mb-4">
           Nein. Momentan sind Vorbestellungen nicht möglich. Bisher haben wir
           keine guten Erfahrungen mit Vorbestellungen gemacht (Nichtabholung der
           Ware, Organisation der Wartezeit in der Schlange trotz Vorbestellung,
@@ -50,7 +51,9 @@ const items = [
         HegauKorn mit der Steigmühle Engen zusammengeschlossen. Dort entstehen
         in einem schonenden Mahlverfahren die hochwertigen HegauKorn-Mehle in
         handwerklicher Manier. Hier kannst du noch mehr erfahren:
-        www.hegaukorn.de
+        <ExternalLink href="https://www.hegaukorn.de/">
+          <Text>www.hegaukorn.de</Text>
+        </ExternalLink>
       </Text>
     ),
   },
@@ -197,8 +200,15 @@ const items = [
         Einarbeitung für so einen kurzen Zeitraum ist für uns hinderlich. Vielen
         Dank für euer Verständnis. Wer sich allerdings vorstellen kann für einen
         längeren Zeitraum bei uns zu arbeiten, ist herzlich eingeladen sich mit
-        einer aussagekräftigen Bewerbung bei uns zu melden
-        (info@brotalgut-konstanz.de).
+        einer aussagekräftigen Bewerbung bei uns zu melden (
+        <a
+          href="mailto:info@brotalgut-konstanz.de"
+          className="cursor-pointer text-primary"
+          target="blank"
+        >
+          info@brotalgut-konstanz.de
+        </a>
+        ).
       </Text>
     ),
   },

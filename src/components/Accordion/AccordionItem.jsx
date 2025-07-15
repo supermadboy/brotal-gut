@@ -36,7 +36,9 @@ export default function AccordionItem({
         </div>
       </div>
       <div
-        className={(open ? "block" : "hidden") + " py-2 md:pl-1/3 font-serif"}
+        className={
+          (open ? "block" : "hidden") + " mb-2 py-2 md:pl-1/3 font-serif"
+        }
       >
         {children}
       </div>

@@ -26,41 +26,42 @@ export default function AboutUs() {
             frisches Sauerteigbrot und andere{" "}
             <i className="font-serif">handgemachte</i> Produkte. Wir arbeiten
             mit hochwertigen Rohstoffen, im kleinen Familienbetrieb in Konstanz
-            am Bodensee
+            am Bodensee.
           </Text>
         </div>
       </div>
 
       <div className="grid-cols-2 md:grid md:min-h-dvh md:p-3">
-        <div className="text-center px-4 py-12 md:text-left">
+        <div className="text-center px-4 pb-12 pt-24 md:text-left">
           <Text className="mb-4">
             Mitten in der Konstanzer Altstadt liegt unsere Backstube, die mehr
             ist als nur ein Ort für gutes Brot. Sie ist ein Ort der Begegnung,
             der Leidenschaft. Bei Brotalgut kultivieren wir gemeinsam mit
-            unserem Team Tag für Tag unser Handwerk und unsere Überzeugung für
-            hochwertige Lebensmittel.
+            unserem Team Tag für Tag unser Handwerk und unsere Überzeugung für{" "}
+            <i className="font-serif">hochwertige</i> Lebensmittel.
           </Text>
           <Text className="mb-4">
             Gemeinsam haben wir, Jörn & Nora, als Quereinsteiger im Jahr 2023
             den Sprung in die Selbstständigkeit gewagt, um einen Ort zu schaffen
             der Mut macht sich auszuprobieren - der zeigt, dass echtes Handwerk
-            nicht kräftezehrend und altmodisch ist, sondern nachhaltig, kreativ
-            und sinnstiftend. Und unglaublich erfüllend. Besonders wenn man
-            spürt, wie aus Mehl, Wasser, Salz und Zeit ein Lebensmittel wird,
-            das Menschen verbindet.
+            nicht kräftezehrend und altmodisch ist, sondern{" "}
+            <i className="font-serif">nachhaltig, kreativ und sinnstiftend.</i>{" "}
+            Und unglaublich erfüllend. Besonders wenn man spürt, wie aus Mehl,
+            Wasser, Salz und Zeit ein Lebensmittel wird, das Menschen verbindet.
           </Text>
           <Text className="mb-4">
             Ob klassisches Dinkelkastenbrot oder Zimtschnecke – jedes Produkt
             hier hat eine eigene Geschichte. Und die besten entstehen dort, wo
             sich Generationen austauschen, Visionen reifen dürfen und man sich
             auf Augenhöhe begegnet. Der Sauerteigstarter? Über 10 Jahre alt. Der
-            Anspruch? Qualität über Quantität. Immer.
+            Anspruch? Qualität über Quantität.{" "}
+            <i className="font-serif">Immer.</i>
           </Text>
         </div>
 
         <div className="border-t-2 solid border-black mx-4 text-center md:text-left md:border-t-0 md:flex md:justify-end">
           <div className="md:min-w-[400px]">
-            <div className="px-4 pt-12 pb-4">
+            <div className="px-4 pt-24 pb-4">
               <Text className="uppercase mb-2 md:text-smallest-desktop">
                 Unsere Lieferanten
               </Text>
@@ -83,12 +84,12 @@ export default function AboutUs() {
                 </ExternalLink>
                 <ExternalLink href="https://shop.rinklin-naturkost.de/">
                   <Text className="md:text-smallest-desktop">
-                    BioGroßhandel Rinklin, Kaiserstuhl <sup>(DE)</sup>
+                    Bio-Großhandel Rinklin, Kaiserstuhl <sup>(DE)</sup>
                   </Text>
                 </ExternalLink>
                 <ExternalLink href="https://pfersich.de/">
                   <Text className="md:text-smallest-desktop">
-                    Konditorhandel Pfersich, Ulm <sup>(DE)</sup>
+                    Konditorfachhandel Pfersich, Ulm <sup>(DE)</sup>
                   </Text>
                 </ExternalLink>
               </div>
@@ -102,38 +103,32 @@ export default function AboutUs() {
               <div className="flex flex-col gap-2">
                 <ExternalLink href="https://wessenberg.de/">
                   <Text className="md:text-smallest-desktop">
-                    Restaurant Wessenberg, Konstanz <sup>(DE)</sup>
+                    Restaurant Wessenberg
                   </Text>
                 </ExternalLink>
                 <ExternalLink href="https://das-heinrich.de/">
                   <Text className="md:text-smallest-desktop">
-                    Restaurant Heinrichs, Konstanz <sup>(DE)</sup>
+                    Restaurant Heinrichs
                   </Text>
                 </ExternalLink>
                 <ExternalLink href="https://doppio-konstanz.de/">
-                  <Text className="md:text-smallest-desktop">
-                    DOPPIO Café, Konstanz <sup>(DE)</sup>
-                  </Text>
+                  <Text className="md:text-smallest-desktop">DOPPIO Café</Text>
                 </ExternalLink>
                 <ExternalLink href="https://no-elf.de/">
                   <Text className="md:text-smallest-desktop">
-                    No.elf Spezialitätenkaffee, Konstanz <sup>(DE)</sup>
+                    No.elf Spezialitätenkaffee
                   </Text>
                 </ExternalLink>
                 <ExternalLink href="https://www.restaurant-ophelia.de/">
                   <Text className="md:text-smallest-desktop">
-                    Ophelia Gourmetrestaurant, Konstanz <sup>(DE)</sup>
+                    Ophelia Gourmetrestaurant
                   </Text>
                 </ExternalLink>
                 <ExternalLink href="https://haettelihof.de/cafe-selma">
-                  <Text className="md:text-smallest-desktop">
-                    Café Selma, Konstanz <sup>(DE)</sup>
-                  </Text>
+                  <Text className="md:text-smallest-desktop">Café Selma</Text>
                 </ExternalLink>
                 <ExternalLink href="https://www.instagram.com/matcho.club/">
-                  <Text className="md:text-smallest-desktop">
-                    matcho Konstanz–coffee, matcha & goods (DE) <sup>(DE)</sup>
-                  </Text>
+                  <Text className="md:text-smallest-desktop">matcho</Text>
                 </ExternalLink>
               </div>
             </div>
