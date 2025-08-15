@@ -1,5 +1,4 @@
 import { useState } from "react";
-import SubTitle from "../typo/SubTitle";
 import ClosingIcon from "./ClosingIcon";
 import Text from "../typo/Text";
 
@@ -20,15 +19,19 @@ export default function Disclaimer() {
         <ClosingIcon />
       </div>
 
-      <Text className="uppercase text-center">
-        ++ Neuigkeiten aus der Backstube ++
-      </Text>
+      <div className="flex flex-col items-center">
+        <Text>+++</Text>
+        <Text className="uppercase text-center">
+          Neuigkeiten aus der Backstube
+        </Text>
+        <Text>+++</Text>
+      </div>
 
       <div className="max-w-xl text-center font-serif">
-        <SubTitle>
-          Auf Grund eines Betriebsausfluges bleibt die Backstube am Freitag den
-          10. Oktober geschlossen
-        </SubTitle>
+        <Text className="text-center">
+          Vom 18.08.25 - 31.08.25 haben wir Sommerpause. Ab dem 02.08.25 sind
+          wir zu unseren gewohnten Öffnungszeiten wieder für euch da.
+        </Text>
       </div>
     </div>
   );

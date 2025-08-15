@@ -17,10 +17,7 @@ export default function AboutUs() {
         </div>
 
         <div className="md:pt-12">
-          <Text
-            id="about-us"
-            className="text-center sticky top-navbarHeight px-4 py-12 scroll-mt-navbarHeight md:scroll-mt-navbarHeightDesktop  md:top-navbarHeightDesktop  md:text-left md:px-20 md:pb-[1000px] md:pt-8"
-          >
+          <Text className="text-center sticky top-navbarHeight px-4 py-12  md:top-navbarHeightDesktop  md:text-left md:px-20 md:pb-[1000px] md:pt-8">
             Hallo, wir sind Nora & Jörn! In unserer kleinen,{" "}
             <i className="font-serif">transparenten</i> Backstube backen wir
             frisches Sauerteigbrot und andere{" "}
@@ -32,8 +29,11 @@ export default function AboutUs() {
       </div>
 
       <div className="grid-cols-2 md:grid md:min-h-dvh md:p-3">
-        <div className="text-center px-4 pb-12 pt-24 md:text-left">
-          <Text className="mb-4">
+        <div className="text-center px-4 pb-12 pt-12 md:pt-24 md:text-left">
+          <Text
+            id="about-us"
+            className="mb-4 scroll-mt-navbarHeight md:scroll-mt-navbarHeightDesktop "
+          >
             Mitten in der Konstanzer Altstadt liegt unsere Backstube, die mehr
             ist als nur ein Ort für gutes Brot. Sie ist ein Ort der Begegnung,
             der Leidenschaft. Bei Brotalgut kultivieren wir gemeinsam mit
@@ -61,7 +61,7 @@ export default function AboutUs() {
 
         <div className="border-t-2 solid border-black mx-4 text-center md:text-left md:border-t-0 md:flex md:justify-end">
           <div className="md:min-w-[400px]">
-            <div className="px-4 pt-24 pb-4">
+            <div className="px-4 pb-4 pt-12 md:pt-24">
               <Text className="uppercase mb-2 md:text-smallest-desktop">
                 Unsere Lieferanten
               </Text>

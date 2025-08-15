@@ -7,7 +7,7 @@ export default function More() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path d="M1 1L35.7482 27L71 1" stroke="inherit" stroke-width="1.5" />
+      <path d="M1 1L35.7482 27L71 1" stroke="inherit" strokeWidth="1.5" />
     </svg>
   );
 }

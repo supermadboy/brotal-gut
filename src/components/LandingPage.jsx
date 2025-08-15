@@ -54,7 +54,7 @@ const LandingPage = () => {
         <div className="grow flex items-center w-3/4 max-w-3xl relative">
           <Logo />
           <div className="absolute bottom-20 flex w-full justify-center md:bottom-44">
-            <Text className="whitespace-nowrap md:text-extra-large">
+            <Text className="whitespace-nowrap text-medium md:text-extra-large">
               Salmannsweilergasse 4
             </Text>
           </div>

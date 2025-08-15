@@ -228,7 +228,7 @@ export default function FAQ() {
           " relative pb-24 mb-8 transition-all overflow-hidden md:mb-4"
         }
       >
-        <Accordion items={items} />
+        <Accordion items={items} secondaryBorderColor={true} />
 
         <div
           role="button"

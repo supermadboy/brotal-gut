@@ -8,11 +8,17 @@ export default function AccordionItem({
   setClickedItem,
   name,
   disabled = false,
+  secondaryBorderColor = false,
 }) {
   const [open, isOpen] = useState(false);
 
   return (
-    <div className={" first:border-t-0 border-t-2 border-solid border-black"}>
+    <div
+      className={
+        (secondaryBorderColor ? "border-primary" : "border-black") +
+        " first:border-t-0 border-t-2 border-solid "
+      }
+    >
       <div
         role="button"
         className={
@@ -27,6 +33,10 @@ export default function AccordionItem({
           setClickedItem(name);
         }}
         onMouseEnter={() => {
+          if (disabled) {
+            return;
+          }
+
           setClickedItem(name);
         }}
       >
@@ -37,7 +47,9 @@ export default function AccordionItem({
       </div>
       <div
         className={
-          (open ? "block" : "hidden") + " mb-2 py-2 md:pl-1/3 font-serif"
+          (open ? "block" : "hidden") +
+          " mb-2 py-2 md:pl-1/3 " +
+          (!secondaryBorderColor ? "font-serif" : "font-sans")
         }
       >
         {children}

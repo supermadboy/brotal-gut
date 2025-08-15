@@ -9,112 +9,275 @@ const availableBreads = [
     tuesday: true,
     thursday: true,
     friday: true,
-    description:
-      "Unser Klassiker. Ein Weizenbrot mit 15 % Vollkornanteil (Roggen- und Weizenvollkorn). Zutaten: Weizenmehl 1050, Weizenvollkornmehl, Roggenvollkornmehl, Wasser, Weizensauerteig, Salz.",
+
+    children: (
+      <>
+        <Text className="md:text-smallest-desktop">
+          Unser Klassiker: Ein Weizenbrot mit kleinem Roggenanteil. Bestehend
+          aus Weizenmehl 1050 und mit 15 % Vollkornanteil (Roggen- und
+          Weizenvollkorn). Hergestellt mit 100 % HegauKorn-Getreide.
+        </Text>
+        <Text className="md:text-smallest-desktop">
+          Zutaten: Weizenmehl 1050, Weizenvollkornmehl, Roggenvollkornmehl,
+          Wasser, Weizensauerteig, Salz.
+        </Text>
+      </>
+    ),
   },
   {
     name: "Landbrot",
     tuesday: true,
     thursday: true,
     friday: true,
-    description:
-      "Helles, reines Weizenbrot. Zutaten: Weizenmehl 1050, Weizenmehl 550, Wasser, Weizensauerteig, Salz.",
+
+    children: (
+      <>
+        <Text className="md:text-smallest-desktop">
+          Ein helles, reines Weizenbrot. Hergestellt mit 100 %
+          HegauKorn-Getreide.
+        </Text>
+        <Text className="md:text-smallest-desktop">
+          Zutaten: Weizenmehl 1050, Weizenmehl 550, Wasser, Weizensauerteig,
+          Salz.
+        </Text>
+      </>
+    ),
   },
   {
     name: "Baguette",
     tuesday: true,
     thursday: true,
     friday: true,
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
+
+    children: (
+      <>
+        <Text className="md:text-smallest-desktop">
+          Ein Weizenbaguette mit T65 Mehl und 0,1 % Hefeanteil. Hergestellt mit
+          Getreide aus Frankreich von Moulin Bourgeois
+        </Text>
+        <Text className="md:text-smallest-desktop">
+          Zutaten: T65 Mehl, Wasser, Weizensauerteig, Hefe, Salz.
+        </Text>
+      </>
+    ),
   },
   {
     name: "Weizenvollkornbrot",
     tuesday: true,
     thursday: true,
     friday: false,
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
+
+    children: (
+      <>
+        <Text className="md:text-smallest-desktop">
+          Ein körniges, kräftiges Weizenvollkornbrot. Erhältlich im Kasten und
+          als freigeschobener Laib. Hergestellt mit 100 % HegauKorn-Getreide.
+        </Text>
+        <Text className="md:text-smallest-desktop">
+          Zutaten: Weizenvollkornmehl, Weizenschrot, Sonnenblumenkernen, Wasser,
+          Weizensauerteig, Salz.
+        </Text>
+      </>
+    ),
   },
   {
     name: "Walnussbrot",
     tuesday: true,
     thursday: false,
     friday: false,
-    description:
-      "Ein Kastenbrot aus Weizen mit 15 % Vollkornanteil (Roggen- und Weizenvollkorn) und Walnüssen im Teig. Zutaten: Weizenmehl 1050, Weizenvollkornmehl, Roggenvollkornmehl, Wasser, Weizensauerteig, Walnüsse, Salz.",
+
+    children: (
+      <>
+        <Text className="md:text-smallest-desktop">
+          Ein Weizenbrot mit kleinem Roggenanteil und Walnusskernen im Kasten.
+          Bestehend aus Weizenmehl 1050 und mit 15 % Vollkornanteil (Roggen- und
+          Weizenvollkorn). Hergestellt mit 100 % HegauKorn-Getreide.
+        </Text>
+        <Text className="md:text-smallest-desktop">
+          Zutaten: Weizenmehl 1050, Weizenvollkornmehl, Roggenvollkornmehl,
+          Walnusskerne, Wasser, Weizensauerteig, Salz.
+        </Text>
+      </>
+    ),
   },
   {
     name: "Dinkelhirsebrot",
     tuesday: true,
     thursday: false,
     friday: false,
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
+
+    children: (
+      <>
+        <Text className="md:text-smallest-desktop">
+          Ein feinporiges, saftiges, rundes Dinkelbrot mit 40 % Vollkornmehl und
+          gekochten Hirsekörner im Teig und Hirseflocken auf der Kruste.
+          Hergestellt mit 100 % HegauKorn-Getreide.
+        </Text>
+        <Text className="md:text-smallest-desktop">
+          Zutaten: Ur-Dinkelmehl 1050 (Oberkulmer Rotkorn),
+          Ur-Dinkelvollkornmehl (Oberkulmer Rotkorn), Hirsekörner, Hirseflocken,
+          Wasser, Dinkelsauerteig, Salz.
+        </Text>
+      </>
+    ),
   },
   {
     name: "Rundes Roggenbrot",
     tuesday: true,
     thursday: false,
     friday: true,
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
+
+    children: (
+      <>
+        <Text className="md:text-smallest-desktop">
+          Ein feinporiges, helles, rundes Roggenbrot.
+        </Text>
+        <Text className="md:text-smallest-desktop">
+          Zutaten: Roggenmehl 1150, Wasser, Roggensauerteig, Salz.
+        </Text>
+      </>
+    ),
   },
   {
     name: "Simit",
     tuesday: true,
     thursday: false,
     friday: false,
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
+
+    children: (
+      <>
+        <Text className="md:text-smallest-desktop">
+          Ein aus der türkischen Küche inspiriertes Weizengebäck mit T65 Mehl
+          und 0,1 % Hefeanteil. Vor dem Backen wird es in Traubenmelasse und
+          Sesam gewälzt und als Stange verzwirbelt. Hergestellt mit Getreide aus
+          Frankreich von Moulin Bourgeois.
+        </Text>
+        <Text className="md:text-smallest-desktop">
+          Zutaten: T65 Mehl, Wasser, Weizensauerteig, Hefe, Salz,
+          Traubenmelasse, Sesam.
+        </Text>
+      </>
+    ),
   },
   {
     name: "Dinkelkastenbrot",
     tuesday: false,
     thursday: true,
     friday: true,
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
+
+    children: (
+      <>
+        <Text className="md:text-smallest-desktop">
+          Ein feinporiges, saftiges Dinkelbrot mit 15 % Vollkornmehl und im
+          Kasten gebacken. Hergestellt mit 100 % HegauKorn-Getreide.
+        </Text>
+        <Text className="md:text-smallest-desktop">
+          Zutaten: Ur-Dinkelmehl 1050 (Oberkulmer Rotkorn), Ur-D
+        </Text>
+      </>
+    ),
   },
   {
     name: "Roggenkastenbrot",
     tuesday: false,
     thursday: true,
     friday: true,
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
+
+    children: (
+      <>
+        <Text className="md:text-smallest-desktop">
+          Ein kerniges Roggenvollkornbrot im Kasten mit gekochten Roggenkörnern
+          im Teig und gewälzt in Saaten und Flocken. Hergestellt mit 100 %
+          HegauKorn-Getreide
+        </Text>
+        <Text className="md:text-smallest-desktop">
+          Zutaten: Roggenvollkornmehl, Roggenvollkornschrot, Roggenkörner,
+          Wasser, Roggensauerteig, Salz, Haferflocken, Kürbiskerne,
+          Sonnenblumenkerne, Mohn, Sesam.
+        </Text>
+      </>
+    ),
   },
   {
     name: "Zimtschnecken",
     tuesday: false,
     thursday: true,
     friday: true,
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
+
+    children: (
+      <>
+        <Text className="md:text-smallest-desktop">
+          Von Hand geknoteter süßer Weizenteig, verfeinert mit Butter, Milch und
+          Ei. Gefüllt mit unserer hausgemachten Füllung aus Zimt, Zucker und
+          Butter. Hergestellt mit 100 % HegauKorn-Getreide.
+        </Text>
+        <Text className="md:text-smallest-desktop">
+          Zutaten: Weizenmehl 550, Vollmilch, Butter, Eier, Zucker,
+          Weizensauerteig, Hefe, Salz, Zimt.
+        </Text>
+      </>
+    ),
   },
   {
     name: "Dinkelvollkornbrot",
     tuesday: false,
     thursday: false,
     friday: true,
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
+
+    children: (
+      <>
+        <Text className="md:text-smallest-desktop">
+          Ein feinporiges, saftiges, rundes Dinkelvollkornbrot. Dieses Brot
+          fermentiert 48 Stunden. Hergestellt mit 100 % HegauKorn-Getreide.
+        </Text>
+        <Text className="md:text-smallest-desktop">
+          Zutaten: Ur-Dinkelvollkornmehl (Oberkulmer Rotkorn),
+          Ur-Dinkelvollkornschrot (Oberkulmer Rotkorn), Wasser, Dinkelsauerteig,
+          Salz.
+        </Text>
+      </>
+    ),
   },
   {
     name: "Porridgebrot",
     tuesday: false,
     thursday: false,
     friday: true,
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
+
+    children: (
+      <>
+        <Text className="md:text-smallest-desktop">
+          Ein kleines rundes Dinkelbrot mit (erquollenen) Haferflocken im Teig
+          und auf der Kruste. Dieses Brot fermentiert 48 Stunden. Hergestellt
+          mit 100 % HegauKorn-Getreide.
+        </Text>
+        <Text className="md:text-smallest-desktop">
+          Zutaten: Ur-Dinkelmehl 1050 (Oberkulmer Rotkorn),
+          Vollkornhaferflocken, Wasser, Dinkelsauerteig, Salz.
+        </Text>
+      </>
+    ),
   },
   {
     name: "Dinkelseelen",
     tuesday: false,
     thursday: false,
     friday: true,
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
+
+    children: (
+      <>
+        <Text className="md:text-smallest-desktop">
+          Ofenfrisches Kleingebäck aus hellem Dinkelmehl, einem würzigen
+          Roggensauerteig und kleinem Hefeanteil. Von Hand abgestochen und mit
+          Kümmel-Salz, Mohn oder Sesam bestreut. Hergestellt mit 100 %
+          HegauKorn-Getreide.
+        </Text>
+        <Text className="md:text-smallest-desktop">
+          Zutaten: Ur-Dinkelmehl 630 (Oberkulmer Rotkorn), Roggensauerteig,
+          Sonnenblumenöl, Wasser, Hefe, Salz, Kümmel/Mohn/Sesam.
+        </Text>
+      </>
+    ),
   },
 ];
 
@@ -161,9 +324,7 @@ const items = [
 
   ...availableBreads.map((bread) => ({
     title: breadToTitle(bread),
-    children: (
-      <Text className="md:text-smallest-desktop">{bread.description}</Text>
-    ),
+    children: bread.children,
     name: bread.name,
   })),
 ];
@@ -177,8 +338,8 @@ export default function Breads() {
       className="md:grid grid-cols-3 gap-8 scroll-mt-navbarHeight md:scroll-mt-navbarHeightDesktop md:mt-navbarHeightDesktop"
     >
       <Picture
-        className="hidden md:block h-[800px]"
-        src={`bread/${clickedItem}`}
+        className="hidden object-contain md:block h-[800px]"
+        src={`bread/${clickedItem?.replaceAll(" ", "_")}`}
       />
 
       <div className="flex flex-col justify-between col-span-2">

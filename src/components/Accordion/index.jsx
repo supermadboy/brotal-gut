@@ -1,6 +1,11 @@
 import AccordionItem from "./AccordionItem";
 
-export default function Accordion({ className, items, setClickedItem }) {
+export default function Accordion({
+  className,
+  items,
+  setClickedItem,
+  secondaryBorderColor,
+}) {
   return (
     <div className={className}>
       {items.map((item, i) => (
@@ -10,6 +15,7 @@ export default function Accordion({ className, items, setClickedItem }) {
           setClickedItem={setClickedItem}
           name={item.name}
           disabled={item.disabled}
+          secondaryBorderColor={secondaryBorderColor}
         >
           {item.children}
         </AccordionItem>
