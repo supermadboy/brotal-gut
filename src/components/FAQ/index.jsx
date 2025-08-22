@@ -14,14 +14,14 @@ const items = [
           keine guten Erfahrungen mit Vorbestellungen gemacht (Nichtabholung der
           Ware, Organisation der Wartezeit in der Schlange trotz Vorbestellung,
           extra Personalkosten zum Verpacken und zur Lagerung der vorbestellten
-          Ware,..), weshalb wir uns entschieden haben, Vorbestellungen von
-          Kleinmengen nicht zu anzubieten. Der logistische Aufwand ist für uns
-          zu hoch. Wir danken für euer Verständnis.
+          Ware,...), weshalb wir uns entschieden haben, Vorbestellungen von
+          Kleinmengen nicht anzubieten. Der logistische Aufwand ist für uns zu
+          hoch. Wir danken für euer Verständnis.
         </Text>
         <Text>
           Solltet ihr mehr als 10 Brote benötigen oder für ein Event größere
           Mengen kaufen wollen, dann dürft ihr euch sehr gerne bei uns melden.
-          Bitte mit einem Vorlauf von wenigstens einer Woche
+          Bitte mit einem Vorlauf von mindestens einer Woche
         </Text>
       </>
     ),
