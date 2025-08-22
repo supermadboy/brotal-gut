@@ -29,7 +29,7 @@ export default function Disclaimer() {
 
       <div className="max-w-xl text-center font-serif">
         <Text className="text-center">
-          Vom 18.08.25 - 31.08.25 haben wir Sommerpause. Ab dem 02.08.25 sind
+          Vom 18.08.25 - 31.08.25 haben wir Sommerpause. Ab dem 02.09.25 sind
           wir zu unseren gewohnten Öffnungszeiten wieder für euch da.
         </Text>
       </div>

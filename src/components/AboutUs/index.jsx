@@ -35,27 +35,25 @@ export default function AboutUs() {
             className="mb-4 scroll-mt-navbarHeight md:scroll-mt-navbarHeightDesktop "
           >
             Mitten in der Konstanzer Altstadt liegt unsere Backstube, die mehr
-            ist als nur ein Ort für gutes Brot. Sie ist ein Ort der Begegnung,
-            der Leidenschaft. Bei Brotalgut kultivieren wir gemeinsam mit
-            unserem Team Tag für Tag unser Handwerk und unsere Überzeugung für{" "}
-            <i className="font-serif">hochwertige</i> Lebensmittel.
+            ist als nur ein Ort für gutes Brot. Bei Brotalgut kultivieren wir
+            gemeinsam mit unserem Team Tag für Tag unser Handwerk und unsere
+            Überzeugung für <i className="font-serif">hochwertige</i>{" "}
+            Lebensmittel.
           </Text>
           <Text className="mb-4">
             Gemeinsam haben wir, Jörn & Nora, als Quereinsteiger im Jahr 2023
-            den Sprung in die Selbstständigkeit gewagt, um einen Ort zu schaffen
-            der Mut macht sich auszuprobieren - der zeigt, dass echtes Handwerk
-            nicht kräftezehrend und altmodisch ist, sondern{" "}
+            den Sprung in die Selbstständigkeit gewagt. Wir möchten zeigen, dass
+            echtes Handwerk nicht kräftezehrend und altmodisch ist, sondern{" "}
             <i className="font-serif">nachhaltig, kreativ und sinnstiftend.</i>{" "}
-            Und unglaublich erfüllend. Besonders wenn man spürt, wie aus Mehl,
-            Wasser, Salz und Zeit ein Lebensmittel wird, das Menschen verbindet.
+            Es erfüllt uns, zu spüren, wie aus Mehl, Wasser, Salz und Zeit ein
+            Lebensmittel wird, das Menschen verbindet.
           </Text>
           <Text className="mb-4">
-            Ob klassisches Dinkelkastenbrot oder Zimtschnecke – jedes Produkt
-            hier hat eine eigene Geschichte. Und die besten entstehen dort, wo
-            sich Generationen austauschen, Visionen reifen dürfen und man sich
-            auf Augenhöhe begegnet. Der Sauerteigstarter? Über 10 Jahre alt. Der
-            Anspruch? Qualität über Quantität.{" "}
-            <i className="font-serif">Immer.</i>
+            Ob traditionelles Dinkelkastenbrot oder eine duftende Zimtschnecke –
+            hinter jedem Produkt steckt eine besondere Geschichte. Der selbst
+            angesetzte Sauerteigstarter begleitet uns schon seit über zehn
+            Jahren. Unser Anspruch dabei ist klar:{" "}
+            <i className="font-serif">Qualität vor Quantität.</i>
           </Text>
         </div>
 
@@ -108,7 +106,7 @@ export default function AboutUs() {
                 </ExternalLink>
                 <ExternalLink href="https://das-heinrich.de/">
                   <Text className="md:text-smallest-desktop">
-                    Restaurant Heinrichs
+                    Restaurant Heinrich
                   </Text>
                 </ExternalLink>
                 <ExternalLink href="https://doppio-konstanz.de/">
@@ -151,10 +149,7 @@ export default function AboutUs() {
       </div>
       <div className="flex flex-col gap-2 md:hidden">
         <Picture src={"mobile/1"} className="max-w-full block" />
-        <Picture
-          src={"mobile/1_Horizontale-16-9"}
-          className="max-w-full block"
-        />
+        <Picture src={"mobile/2"} className="max-w-full block" />
         <Picture src={"mobile/3"} className="max-w-full block" />
       </div>
     </div>

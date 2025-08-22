@@ -19,7 +19,7 @@ export default function Carousel({ images, vertical = false }) {
   };
 
   return (
-    <div className="px-7">
+    <div>
       <Slider {...settings}>
         {images.map(({ src, width }) => (
           <Picture
