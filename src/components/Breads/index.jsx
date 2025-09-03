@@ -247,7 +247,7 @@ const availableBreads = [
     children: (
       <>
         <Text className="md:text-smallest-desktop">
-          Ein kleines rundes Dinkelbrot mit (erquollenen) Haferflocken im Teig
+          Ein kleines rundes Dinkelbrot mit (verquollenen) Haferflocken im Teig
           und auf der Kruste. Dieses Brot fermentiert 48 Stunden. Hergestellt
           mit 100 % HegauKorn-Getreide.
         </Text>
