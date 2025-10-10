@@ -168,11 +168,13 @@ const availableBreads = [
     children: (
       <>
         <Text className="md:text-smallest-desktop">
-          Ein feinporiges, saftiges Dinkelbrot mit 15 % Vollkornmehl und im
+          Ein feinporiges, saftiges Dinkelbrot mit 15 % Vollkornanteill und im
           Kasten gebacken. Hergestellt mit 100 % HegauKorn-Getreide.
         </Text>
         <Text className="md:text-smallest-desktop">
-          Zutaten: Ur-Dinkelmehl 1050 (Oberkulmer Rotkorn), Ur-D
+          Zutaten: Ur-Dinkelmehl 1050 (Oberkulmer Rotkorn),
+          Ur-Dinkelvollkornschrot (Oberkulmer Rotkorn), Wasser, Dinkelsauerteig,
+          Salz.
         </Text>
       </>
     ),
