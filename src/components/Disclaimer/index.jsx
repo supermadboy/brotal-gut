@@ -3,7 +3,7 @@ import ClosingIcon from "./ClosingIcon";
 import Text from "../typo/Text";
 
 export default function Disclaimer() {
-  const [closed, setClosed] = useState(true);
+  const [closed, setClosed] = useState(false);
 
   return (
     <div
@@ -29,8 +29,8 @@ export default function Disclaimer() {
 
       <div className="max-w-xl text-center font-serif">
         <Text className="text-center">
-          Vom 18.08.25 - 31.08.25 haben wir Sommerpause. Ab dem 02.09.25 sind
-          wir zu unseren gewohnten Öffnungszeiten wieder für euch da.
+          Wir sind am Dreikönigstag (06.01.26) trotz des Feiertags zu unseren
+          gewohnten Öffnungszeiten für Euch da!
         </Text>
       </div>
     </div>
