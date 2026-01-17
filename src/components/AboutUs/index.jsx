@@ -125,9 +125,6 @@ export default function AboutUs() {
                 <ExternalLink href="https://haettelihof.de/cafe-selma">
                   <Text className="md:text-smallest-desktop">Café Selma</Text>
                 </ExternalLink>
-                <ExternalLink href="https://www.instagram.com/matcho.club/">
-                  <Text className="md:text-smallest-desktop">matcho</Text>
-                </ExternalLink>
               </div>
             </div>
           </div>
