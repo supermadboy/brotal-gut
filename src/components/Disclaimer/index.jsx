@@ -30,7 +30,7 @@ export default function Disclaimer() {
       <div className="max-w-xl text-center font-serif">
         <Text className="text-center">
           Während der Fastnachtstage vom 12.02.26 - 22.02.26 hat unsere
-          Backstube geschlossen. Ab Dienstag den 24.02.26 sind wir wieder wie
+          Backstube geschlossen. Ab Dienstag, den 24.02.26, sind wir wieder wie
           gewohnt für Euch da!
         </Text>
       </div>
