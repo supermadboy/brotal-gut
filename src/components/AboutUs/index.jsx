@@ -125,6 +125,11 @@ export default function AboutUs() {
                 <ExternalLink href="https://haettelihof.de/cafe-selma">
                   <Text className="md:text-smallest-desktop">Café Selma</Text>
                 </ExternalLink>
+                <ExternalLink href="https://www.kulturkiosk-schranke.de/">
+                  <Text className="md:text-smallest-desktop">
+                    Kulturkiosk Schranke e.V.
+                  </Text>
+                </ExternalLink>
               </div>
             </div>
           </div>

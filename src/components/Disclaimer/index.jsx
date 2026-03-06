@@ -3,7 +3,7 @@ import ClosingIcon from "./ClosingIcon";
 import Text from "../typo/Text";
 
 export default function Disclaimer() {
-  const [closed, setClosed] = useState(false);
+  const [closed, setClosed] = useState(true);
 
   return (
     <div
