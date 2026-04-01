@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { get } from "@vercel/edge-config";
 import ClosingIcon from "./ClosingIcon";
 import Text from "../typo/Text";
 
@@ -9,16 +8,25 @@ export default function Disclaimer() {
 
   useEffect(() => {
     const fetchDisclaimer = async () => {
-      const text = await get("disclaimer");
+      try {
+        const response = await fetch("/api/disclaimer");
+        const { text } = await response.json();
 
-      if (text) {
-        setDisclaimerText(text);
-        setClosed(false);
+        if (text) {
+          setDisclaimerText(text);
+          setClosed(false);
+        }
+      } catch (error) {
+        console.error("Error fetching disclaimer:", error);
       }
     };
 
     fetchDisclaimer();
   }, []);
+
+  if (!disclaimerText) {
+    return null;
+  }
 
   return (
     <div
