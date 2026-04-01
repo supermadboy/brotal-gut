@@ -3,7 +3,7 @@ import ClosingIcon from "./ClosingIcon";
 import Text from "../typo/Text";
 
 export default function Disclaimer() {
-  const [closed, setClosed] = useState(true);
+  const [closed, setClosed] = useState(false);
 
   return (
     <div
@@ -29,9 +29,8 @@ export default function Disclaimer() {
 
       <div className="max-w-xl text-center font-serif">
         <Text className="text-center">
-          Während der Fastnachtstage vom 12.02.26 - 22.02.26 hat unsere
-          Backstube geschlossen. Ab Dienstag, den 24.02.26, sind wir wieder wie
-          gewohnt für Euch da!
+          Am Karfreitag, 03.04., haben wir geschlossen. Am Ostersamstag, 04.04.,
+          haben wir ab 10:00 Uhr großen Osterverkauf bei uns!
         </Text>
       </div>
     </div>
