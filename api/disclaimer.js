@@ -1,11 +1,19 @@
+// api/disclaimer.js
 import { get } from "@vercel/edge-config";
 
-export default async function handler(req, res) {
+export default async function handler(req) {
+  // kein `res` Parameter
   try {
     const text = await get("disclaimer");
-    res.status(200).json({ text });
+    return new Response(JSON.stringify({ text }), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
   } catch (error) {
-    res.status(200).json({ text: undefined });
+    return new Response(JSON.stringify({ text: undefined }), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
   }
 }
 
