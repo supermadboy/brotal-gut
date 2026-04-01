@@ -7,13 +7,17 @@ export default function Disclaimer() {
   const [closed, setClosed] = useState(true);
   const [disclaimerText, setDisclaimerText] = useState(undefined);
 
-  useEffect(async () => {
-    const text = await get("disclaimer");
+  useEffect(() => {
+    const fetchDisclaimer = async () => {
+      const text = await get("disclaimer");
 
-    if (text) {
-      setDisclaimerText(text);
-      setClosed(false);
-    }
+      if (text) {
+        setDisclaimerText(text);
+        setClosed(false);
+      }
+    };
+
+    fetchDisclaimer();
   }, []);
 
   return (
