@@ -1,9 +1,32 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ClosingIcon from "./ClosingIcon";
 import Text from "../typo/Text";
 
 export default function Disclaimer() {
   const [closed, setClosed] = useState(true);
+  const [disclaimerText, setDisclaimerText] = useState(undefined);
+
+  useEffect(() => {
+    const fetchDisclaimer = async () => {
+      try {
+        const response = await fetch("/api/disclaimer");
+        const { text } = await response.json();
+
+        if (text) {
+          setDisclaimerText(text);
+          setClosed(false);
+        }
+      } catch (error) {
+        console.error("Error fetching disclaimer:", error);
+      }
+    };
+
+    fetchDisclaimer();
+  }, []);
+
+  if (!disclaimerText) {
+    return null;
+  }
 
   return (
     <div
@@ -28,10 +51,7 @@ export default function Disclaimer() {
       </div>
 
       <div className="max-w-xl text-center font-serif">
-        <Text className="text-center">
-          Am Karfreitag, 03.04., haben wir geschlossen. Am Ostersamstag, 04.04.,
-          haben wir ab 10:00 Uhr großen Osterverkauf bei uns!
-        </Text>
+        <Text className="text-center">{disclaimerText}</Text>
       </div>
     </div>
   );
