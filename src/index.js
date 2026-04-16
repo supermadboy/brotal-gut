@@ -33,7 +33,7 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "admin", // ← neu
+    path: "edit-disclaimer",
     element: <Admin />,
   },
   {
