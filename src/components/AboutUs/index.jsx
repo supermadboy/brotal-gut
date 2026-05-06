@@ -130,6 +130,14 @@ export default function AboutUs() {
                     Kulturkiosk Schranke e.V.
                   </Text>
                 </ExternalLink>
+                <ExternalLink href="https://bloggers-kn.de/">
+                  <Text className="md:text-smallest-desktop">
+                    Café Bloggers
+                  </Text>
+                </ExternalLink>
+                <ExternalLink href="https://ottokonstanz.de/">
+                  <Text className="md:text-smallest-desktop">Café Otto</Text>
+                </ExternalLink>
               </div>
             </div>
           </div>
